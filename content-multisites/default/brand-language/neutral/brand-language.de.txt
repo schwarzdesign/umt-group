@@ -1,0 +1,217 @@
+Title: Neutrale Markensprache
+
+----
+
+Workflow: presets
+
+----
+
+Brand-name: neutral
+
+----
+
+Brand-type: Unternehmenen
+
+----
+
+Category: Unternehmen, KMU, Verband
+
+----
+
+Target-group:
+
+Bezeichnung: Durchschnittsverbraucher (B2C)
+- Private Situation: lebt urban; mit Partner und Kindern; Wert auf Work-Life-Balance.
+- Berufliche Situation: angestellt; stabiles Einkommen; berufliche Entwicklung wichtig.
+- Emotion: Authentizität; Empathie; Zugehörigkeit.
+- Herausforderungen: Work-Life-Balance; Umweltbewusstsein; Informationsflut.
+- Werte: Nachhaltigkeit; Ehrlichkeit; Qualität.
+- Ziele: Umweltbewusst leben; Komfort; finanzielle Sicherheit.
+- Erwartungen: Kundenservice; Nachhaltigkeit; Innovation.
+- Kommunikationskanäle: Soziale Medien; E-Mail; traditionelle Medien.
+- Entscheidungsfaktoren: Preis-Leistungs-Verhältnis; Qualität; Empfehlungen.
+- Interessen: Gesundheit; Technologie; Reisen.
+
+Kommunikationsanweisungen:
+- Betonung auf Nachhaltigkeit und Qualität; klare Informationen zu Materialien und Prozessen; inspirierende Botschaften.
+
+----
+
+Brand-usps:
+
+- Nachhaltige Produktionstechnologien: Das Unternehmen setzt auf innovative, umweltfreundliche Technologien, die den CO2-Fußabdruck minimieren und nachhaltige Geschäftspraktiken fördern.
+- Agile Entwicklungsprozesse: Durch flexible und schnelle Anpassungsstrategien kann das Unternehmen auf sich ändernde Marktanforderungen reagieren und bleibt stets wettbewerbsfähig.
+- Kundenzentrierte Lösungen: Das Unternehmen bietet maßgeschneiderte Produkte und Dienstleistungen, die gezielt auf individuelle Kundenbedürfnisse abgestimmt sind und so maximale Zufriedenheit gewährleisten.
+- Vorreiter in der Digitalisierung: Mit der Integration von künstlicher Intelligenz, Big Data und Automatisierung schafft das Unternehmen intelligente und zukunftssichere Geschäftsmodelle.
+- Starke Innovationskultur: Durch ein offenes Arbeitsumfeld und flache Hierarchien fördert das Unternehmen kreative Ideen und innovative Ansätze, die kontinuierlich neue Produkte und Prozesse vorantreiben.
+- Exzellenter Kundenservice: Schnelle Reaktionszeiten und individuelle Betreuung zeichnen das Unternehmen aus, was zu einer hohen Kundentreue und langfristigen Partnerschaften führt.
+- Global vernetztes Expertenteam: Das Unternehmen vereint internationale Fachkräfte, die durch ihre Vielfalt an Perspektiven und Erfahrungen globale Lösungen entwickeln.
+- Langfristige Partnerschaften: Durch strategische Kooperationen mit führenden Unternehmen und Forschungseinrichtungen stärkt das Unternehmen seine Innovationskraft und bietet stets marktführende Lösungen an.
+
+----
+
+Brand-goals: Neukundengewinnung, Vertrauen aufbauen, Markenimage stärken, Reichweite vergrößern, Wettbewerbsdifferenzierung
+
+----
+
+Communication-channels: Blogs, Content-Marketing, E-Mail-Marketing, Website, Suchmaschinenmarketing (SEM)
+
+----
+
+Brand-values: Nachhaltigkeit, Innovation, Kundenzentrierung
+
+----
+
+Brand-personality: Zuverlässig, Fortschrittlich, Kundennah
+
+----
+
+Brand-positioning: neutral richtet sich an urbane Familien mit durchschnittlichem Einkommen und bietet qualitativ hochwertige Produkte zu fairen Preisen, indem wir auf nachhaltige Produktionstechnologien und agile Entwicklungsprozesse setzen. Dadurch heben wir uns von herkömmlichen Anbietern ab und ermöglichen unseren Kunden ein gutes Geschäft mit Sicherheit und Verlässlichkeit.
+
+----
+
+Brand-promises: Zukunftssicher und nachhaltig für alle.
+
+----
+
+Brand-concept:
+
+Die Marke neutral zeichnet sich durch ihre kompromisslose Ausrichtung auf Nachhaltigkeit und Innovation aus, die fest in ihrer Unternehmenskultur verankert sind. Als zuverlässiger Partner für urbane Familien mit durchschnittlichem Einkommen bietet neutral Produkte, die nicht nur qualitativ hochwertig, sondern auch erschwinglich sind. Diese Kombination aus Qualität und fairen Preisen wird durch den Einsatz innovativer, umweltfreundlicher Technologien und agiler Entwicklungsprozesse ermöglicht, die den CO2-Fußabdruck minimieren und gleichzeitig die Reaktionsfähigkeit auf sich verändernde Marktanforderungen steigern. 
+
+In einer Welt, die von Informationsflut und der Notwendigkeit für nachhaltiges Handeln geprägt ist, spricht neutral gezielt die Bedürfnisse seiner Zielgruppe an, die Wert auf Work-Life-Balance, Umweltbewusstsein und Authentizität legt. Die Marke positioniert sich als Vorreiter in der Digitalisierung, indem sie künstliche Intelligenz und Big Data integriert, um intelligente und zukunftssichere Geschäftsmodelle zu schaffen, die auf individuelle Kundenbedürfnisse zugeschnitten sind.
+
+Durch seine starke Innovationskultur und das global vernetzte Expertenteam schafft neutral nicht nur exzellente Produkte und Dienstleistungen, sondern baut auch langfristige Partnerschaften auf, die das Vertrauen und die Loyalität der Kunden stärken. Die Kommunikation erfolgt über relevante Kanäle wie soziale Medien und E-Mail, um die Zielgruppe effektiv zu erreichen und inspirierende Botschaften zu vermitteln.
+
+Das Markenversprechen von neutral, 'Zukunftssicher und nachhaltig für alle', fasst die Kernphilosophie der Marke prägnant zusammen und unterstreicht ihr Engagement, nachhaltige Werte mit innovativen Lösungen zu kombinieren, um den Kunden eine verlässliche und zukunftsorientierte Wahl zu bieten.
+
+----
+
+Sample-text: 
+
+----
+
+Text-language: Deutsch
+
+----
+
+Custom-instructions:
+
+- moderne, junge, frische Tonalität
+- B2C: Duzen
+- Überschriften: überraschend, intelligent, kurz (maximal 3 Worte)
+- Gendern: mit Doppelpunkt
+
+----
+
+Choice-of-words-instruction: Verwende Wörter und Formulierungen, die für Effizienz und Vertrauen stehen. Vermeide Wörter, die Unsicherheit suggerieren. Verwende Wörter und Formulierungen, die für Innovation und Transparenz stehen. Vermeide Wörter, die Komplexität und Intransparenz implizieren.
+
+----
+
+Power-words: effizient, vertrauenswürdig, innovativ, umweltfreundlich, wertschätzend, erschwinglich, agil, verlässlich, transparent, kundenorientiert, nachhaltig, hochwertig, zukunftsweisend, partnerschaftlich, fair
+
+----
+
+No-go-words:
+
+- revolution.* (transformieren)
+- Gamechanger (führend)
+- bahnbrech.* (visionär)
+- disruptiv.* (progressiv)
+- unfehlbar.* (verlässlich)
+- unvergleich.* (einzigartig)
+- überragend (hochwertig)
+- grenzenlos (transparent)
+- exklusiv (fair)
+- massiv (robust)
+- einzigartig (wertschätzend)
+- ultimativ (zukunftsweisend)
+- sensationell (innovativ)
+- blitzschnell (agil)
+- unerschütterlich (zuverlässig)
+- unerreicht (kundenorientiert)
+- allumfassend (nachhaltig)
+- kolossal (bedeutend)
+- episch (fortschrittlich)
+- legendär (partnerschaftlich)
+
+----
+
+Ai-enabled: 1
+
+----
+
+Brand-enabled: 1
+
+----
+
+Website-enabled: 1
+
+----
+
+Company-enabled: 1
+
+----
+
+Edited-by: cgaicA7e
+
+----
+
+Edited: 2024-11-29 13:02:50
+
+----
+
+View: layout
+
+----
+
+Instruction:
+
+Verwende eine Tonalität, die modern, frisch und ansprechend ist. Setze auf eine direkte Erzählweise und sprich die Zielgruppe mit "Du" an, um Nähe und Vertrautheit zu schaffen. Nutze einfache und kraftvolle Sprache, um die Botschaften klar und einprägsam zu vermitteln. 
+
+Sorge für eine klare Textstruktur mit kurzen und prägnanten Sätzen. Verwende aktive Formulierungen, um Dynamik zu erzeugen, und variiere das Satztempo, um den Text lebendig zu halten. Die Interpunktion sollte klar und hilfreich sein, um den Lesefluss zu unterstützen. Vermeide übermäßige Details, aber gib genug Informationen, um Vertrauen und Interesse zu wecken.
+
+Sprich die Leser direkt mit "Du" an und verwende gendergerechte Sprache mit dem Doppelpunkt, um alle Geschlechter gleichermaßen zu berücksichtigen. Verwende eine informelle und freundliche Ansprache, die Nähe und Authentizität vermittelt. Die Perspektive sollte die Leser einbeziehen und eine Beziehung zur Marke aufbauen.
+
+Überschriften sollten kurz, intelligent und überraschend sein, mit maximal drei Worten. Sie sollten fesselnd und inspirierend sein, um sofortige Aufmerksamkeit zu erregen. Satzzeichen in Überschriften sind nicht erforderlich.
+
+Nenne Marken- und Produktnamen ohne Artikel und integriere sie fließend in den Text. Verwende "Wir ..." anstelle des Markennamens, um ein Gefühl der Zugehörigkeit und Partnerschaft zu fördern.
+
+Bevorzuge Power-Words, die Effizienz, Vertrauen und Innovation betonen. Beispiele: effizient, vertrauenswürdig, innovativ, umweltfreundlich, wertschätzend, erschwinglich, agil, verlässlich, transparent, kundenorientiert, nachhaltig, hochwertig, zukunftsweisend, partnerschaftlich, fair.
+
+Verwende statt der folgenden No-Go-Words und deren Ableitungen entsprechende Alternativen:
+- revolution.* (transformieren)
+- Gamechanger (führend)
+- bahnbrech.* (visionär)
+- disruptiv.* (progressiv)
+- unfehlbar.* (verlässlich)
+- unvergleich.* (einzigartig)
+- überragend (hochwertig)
+- grenzenlos (transparent)
+- exklusiv (fair)
+- massiv (robust)
+- einzigartig (wertschätzend)
+- ultimativ (zukunftsweisend)
+- sensationell (innovativ)
+- blitzschnell (agil)
+- unerschütterlich (zuverlässig)
+- unerreicht (kundenorientiert)
+- allumfassend (nachhaltig)
+- kolossal (bedeutend)
+- episch (fortschrittlich)
+- legendär (partnerschaftlich)
+
+----
+
+Topic: Neutral
+
+----
+
+Test: [{"content":{"level":"h1","text":"Balance im Alltag","heading_message":"","heading_style":"","heading_generator":null},"id":"3eaf7119-8cc0-4fde-b52f-d170817dad1f","isHidden":false,"type":"heading"},{"content":{"text":"<p>Stell dir vor, du betrittst einen Raum, in dem alles im Gleichgewicht ist. Die Farben, die Geräusche, die Atmosphäre. Alles fühlt sich harmonisch an. Dieses Gefühl der Ausgeglichenheit ist etwas, das wir oft suchen, aber nicht immer finden. Im hektischen Alltag, zwischen Beruf, Familie und Freizeit, kann es eine Herausforderung sein, die richtige Balance zu finden. Doch genau hier liegt der Schlüssel: in der Neutralität.</p>","task":"","text_topic":"","text_briefing":"","briefing_ai":null,"text_length":"","new_generator":null,"update_task":"","text_length_change":"","update_generator":null,"custom_prompt":"","custom_generator":null,"translate_generator":null},"id":"d5336ec6-7d82-4ac2-8350-6a42934ab5b0","isHidden":false,"type":"text"},{"content":{"level":"h2","text":"Die Kraft der Neutralität","heading_message":"","heading_style":"","heading_generator":null},"id":"87c29739-64b9-4748-8a6b-e4410bf82835","isHidden":false,"type":"heading"},{"content":{"text":"<p>Du stehst vor der Wahl: ein neuer Job, der spannend klingt, aber viel Reisen erfordert, oder die bequeme Position, die du schon seit Jahren hast? Entscheidungen wie diese prägen unseren Alltag. Doch was wäre, wenn die Antwort nicht entweder oder wäre? Neutralität bedeutet, die Mitte zu finden, ohne sich von Extremen beeinflussen zu lassen. Es geht darum, die Vor- und Nachteile abzuwägen und einen Weg zu finden, der dir langfristig guttut.</p> <p>Neutralität gibt dir die Freiheit, Entscheidungen ohne Vorurteile zu treffen. Sie hilft dir, Situationen aus verschiedenen Perspektiven zu betrachten. Denk an einen Spaziergang im Wald. Die Ruhe der Natur, das gleichmäßige Rauschen der Blätter – all das bietet dir einen neutralen Raum, in dem du klarer denken kannst. Diese Art von Umgebung kann dir helfen, innerlich zur Ruhe zu kommen und die wichtigen Dinge im Leben zu erkennen.</p> <p>Wichtig ist, dass Neutralität nicht bedeutet, keine Meinung zu haben. Im Gegenteil, sie erlaubt dir, informierte Entscheidungen zu treffen, die auf Fakten und nicht auf Emotionen basieren. Es ist ein Prozess, der Geduld erfordert, aber letztlich zu besseren Ergebnissen führt. Du lernst, deine eigenen Werte zu schätzen und gleichzeitig offen für Neues zu bleiben.</p>","task":"","text_topic":"","text_briefing":"","briefing_ai":null,"text_length":"","new_generator":null,"update_task":"","text_length_change":"","update_generator":null,"custom_prompt":"","custom_generator":null,"translate_generator":null},"id":"11d85dab-3c8c-4c08-9e6e-f41c5657765a","isHidden":false,"type":"text"},{"content":{"level":"h2","text":"In Balance mit dir selbst","heading_message":"","heading_style":"","heading_generator":null},"id":"159a941c-ee17-437f-9c8c-af000017e86e","isHidden":false,"type":"heading"},{"content":{"text":"<p>Manchmal ist es nicht die große Entscheidung, die uns aus der Bahn wirft, sondern die kleinen, täglichen Herausforderungen. Der Wecker klingelt und du musst dich entscheiden: noch fünf Minuten liegen bleiben oder sofort aufstehen? Hier kann Neutralität helfen, deinen Tag effizienter zu gestalten. Indem du Prioritäten setzt und unnötigen Ballast abwirfst, schaffst du Platz für die Dinge, die wirklich zählen.</p> <p>Es ist wichtig, sich selbst nicht zu überfordern. In einer Welt voller Erwartungen und Möglichkeiten kann es leicht passieren, dass wir uns selbst verlieren. Doch Neutralität bietet einen Ausweg. Sie erlaubt dir, dich auf das Wesentliche zu konzentrieren, ohne dich von der Flut an Informationen überwältigen zu lassen. Du lernst, Nein zu sagen, wenn es nötig ist, und Ja, wenn es sich richtig anfühlt.</p> <p>Ein neutraler Standpunkt bedeutet auch, sich selbst zu akzeptieren, wie man ist. Du bist nicht perfekt, und das ist in Ordnung. Es geht darum, die eigenen Stärken und Schwächen zu erkennen und zu akzeptieren. Das ist die Basis für persönliches Wachstum. Mit dieser Einstellung kannst du dich Herausforderungen stellen, ohne dich von ihnen überwältigen zu lassen.</p>","task":"","text_topic":"","text_briefing":"","briefing_ai":null,"text_length":"","new_generator":null,"update_task":"","text_length_change":"","update_generator":null,"custom_prompt":"","custom_generator":null,"translate_generator":null},"id":"262a5cf3-f213-442e-aa6e-20198b720d2c","isHidden":false,"type":"text"},{"content":{"level":"h2","text":"Neutralität als Lebensstil","heading_message":"","heading_style":"","heading_generator":null},"id":"c5e8d101-5aff-4f57-a9ec-f923e29db0b4","isHidden":false,"type":"heading"},{"content":{"text":"<p>Neutralität kann auch eine Haltung gegenüber der Welt um dich herum sein. In einer Zeit, in der Nachhaltigkeit und Umweltschutz immer wichtiger werden, bietet ein neutraler Ansatz eine Möglichkeit, verantwortungsbewusst zu handeln. Es bedeutet, auf die Balance zwischen Konsum und Umweltschutz zu achten und bewusste Entscheidungen zu treffen.</p> <p>Ein neutraler Lebensstil bedeutet, Qualität über Quantität zu stellen. Es geht darum, langlebige Produkte zu wählen und achtsam mit Ressourcen umzugehen. Diese Haltung fördert nicht nur ein nachhaltigeres Leben, sondern auch ein erfüllteres. Du entscheidest dich für Dinge, die wirklich wichtig sind, und lässt alles andere los.</p> <p>Die Neutralität ist kein Kompromiss, sondern eine bewusste Entscheidung. Sie gibt dir die Möglichkeit, dein Leben nach deinen eigenen Vorstellungen zu gestalten, ohne dich von äußeren Einflüssen treiben zu lassen. Und genau darin liegt ihre Stärke: Sie schenkt dir Freiheit und gleichzeitig Halt.</p> <p>Die Balance zu finden, ist eine Reise, die nie endet. Doch mit Neutralität als Kompass kannst du sicher sein, dass du auf dem richtigen Weg bist. Du lernst, die Welt mit anderen Augen zu sehen und die kleinen Momente des Lebens zu schätzen. Und das macht den Unterschied.</p>","task":"","text_topic":"","text_briefing":"","briefing_ai":null,"text_length":"","new_generator":null,"update_task":"","text_length_change":"","update_generator":null,"custom_prompt":"","custom_generator":null,"translate_generator":null},"id":"e4c1d6a9-522f-43cd-8238-a407e8e62e3b","isHidden":false,"type":"text"}]
+
+----
+
+Optimization-tips: 
+
+----
+
+Uuid: zXXkaCQfwCI55gyk

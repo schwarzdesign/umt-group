@@ -1,0 +1,149 @@
+Title: Businessfoto
+
+----
+
+Topic: Professionelle Businessfotografie
+
+----
+
+Category: photography
+
+----
+
+Brand-personality: Zuverlässig, Fortschrittlich, Kundennah
+
+----
+
+Photo-attributes: natural_colors, natural_light, light_effects, unedited_aesthetic, natural_proportions, no_perspective_distortions, no_reflections
+
+----
+
+Graphic-attributes: 
+
+----
+
+Instruction:
+
+# Professionelle Businessfotografie
+
+## 1. Komposition
+- Bildaufbau: Präzise und durchdacht
+- Aufnahmeperspektive: Zentral und harmonisch
+- Tiefe und Ebenen: Subtil erzeugt, harmonisch
+- Verzerrung: Keine Perspektivverzerrungen
+- Fokuspunkt: Hauptmotiv, scharf und präzise
+- Horizont: Klar und ausgewogen
+
+## 2. Licht und Schatten
+- Lichtquelle: Natürliches Tageslicht
+- Lichtintensität: Weich und unaufdringlich
+- Lichtstimmung: Natürlich und einladend
+- Schatten: Natürlich und ausgewogen
+
+## 3. Texturen und Details
+- Oberflächenstruktur: Klar und professionell
+- Detailgrad: Fein und präzise
+- Materialien: Authentisch und hochwertig
+
+## 4. Stil und Ästhetik
+- Visueller Stil: Unbearbeitet und authentisch
+- Komplexitätsgrad: Mittel, keine überladenen Elemente
+- Atmosphäre und Stimmung: Zuverlässig und kundennah
+- Kontrast: Natürlich und ausgewogen
+
+## 5. Hintergrund und Umgebung
+- Ort: Urban und integriert
+- Hintergrunddetails: Weich und dezent
+- Landschaft oder Stadtbild: Echte Umgebungen
+
+## 6. Personen und Objekte
+- Protagonisten: Authentische Berufstätige, alle Branchen
+- Personen: Im Fokus, klar, präsent
+- Pose und Ausdruck: Entspannt und ungezwungen
+- Interaktion: Natürlich und authentisch
+- Kleidung und Accessoires: Professionell und zeitgemäß
+
+## 7. Farbstimmung und Farbpalette
+- Hauptfarben: Natürliche Farben, ohne explizite Farbverweise
+- Farbintensität: Sanft und erdig
+- Farbverläufe und Übergänge: Natürlich und harmonisch
+- Farbassoziationen: Keine Farbverzerrungen
+
+## 8. Bewegung und Dynamik
+- Dynamik im Bild: Lebendig und klar
+- Bewegungsunschärfe: Dezente Unterstützung des Hauptmotivs
+- Aktive oder passive Komposition: Aktiv und lebendig
+
+## 9. Emotionale Wirkung
+- Gefühlsebene: Zuverlässig und fortschrittlich
+- Bildsprache: Direkt und authentisch
+- Subtile Details: Kleine, bedeutungsvolle Elemente
+
+## 10. Bildwelten
+- Motivwelt: Arbeitsumgebung innen oder außen, alle Branchen
+- Bildaussage: Fortschritt und Kundennähe
+- Bildkonzept: Authentische Darstellung des Arbeitsalltags
+
+----
+
+Instruction-analyzer-switch: false
+
+----
+
+Ai-enabled: 1
+
+----
+
+Brand-enabled: 1
+
+----
+
+Website-enabled: 1
+
+----
+
+Company-enabled: 1
+
+----
+
+Edited-by: cgaicA7e
+
+----
+
+Edited: 2024-11-08 08:35:49
+
+----
+
+Mode: test
+
+----
+
+Main-content: [{"content":{"text":"<p>## Authentizität und Natürlichkeit:\nSowohl bei Innen- als auch bei Außenaufnahmen liegt der Fokus darauf, die Personen in ihrer natürlichen Umgebung und in ungezwungenen Momenten festzuhalten. Natürliches Licht wird bevorzugt, um die Szenen authentisch und lebendig wirken zu lassen. Innenaufnahmen nutzen die vorhandene Raumgestaltung, um die Personen in entspannten, alltäglichen Posen zu zeigen. Außenaufnahmen integrieren die Umgebung, indem die Personen in die natürliche oder urbane Landschaft eingebettet werden.\n\n## Arbeit mit Unschärfe:\nIn Innenräumen wird die Unschärfe gezielt eingesetzt, um Elemente im Vordergrund oder Hintergrund weich zu zeichnen, während der Fokus auf dem Hauptmotiv liegt. Dies erzeugt Tiefe und lenkt die Aufmerksamkeit auf die wesentlichen Aspekte des Bildes. Bei Außenaufnahmen wird die Unschärfe genutzt, um den Hintergrund wie beispielsweise Bäume, Gebäude oder Straßen dezent verschwimmen zu lassen. Dies hebt das Hauptmotiv hervor und schafft gleichzeitig eine harmonische Verbindung zur Umgebung.\n\n## Leicht analoger Look:\nInnenaufnahmen profitieren von einer leichten Körnung und warmen, sanften Farbtönen, die an analoge Fotografie erinnern und eine gemütliche, einladende Atmosphäre schaffen. Diese Technik verleiht den Bildern eine zeitlose Qualität und betont die Natürlichkeit der Szene. Bei Außenaufnahmen wird der analoge Look durch das Spiel mit natürlichem Licht und Schatten verstärkt. Die Farbkorrektur hebt warme, erdige Töne hervor, während die Bilder dennoch klar und professionell wirken.\n\n## Helle und offene Umgebung:\nBei Innenaufnahmen wird viel Wert auf gut beleuchtete Räume gelegt, die durch große Fenster und offene Raumkonzepte viel natürliches Licht einlassen. Dies schafft eine freundliche und transparente Atmosphäre, die die Personen im besten Licht zeigt. Außenaufnahmen nutzen das natürliche Tageslicht, um die Szenen lebendig und dynamisch zu gestalten. Ob in städtischer Umgebung oder in der Natur – das Licht wird genutzt, um Tiefe und Klarheit zu erzeugen, wobei auf eine harmonische Einbettung der Personen in die Umgebung geachtet wird.\n\n## Professionelle Bildgestaltung:\nSowohl Innen- als auch Außenaufnahmen sind präzise komponiert, um eine klare Bildaussage zu gewährleisten. Die Positionierung der Personen, die Nutzung der Umgebung und die Wahl des Bildausschnitts sind sorgfältig durchdacht. Trotz des leicht analogen Looks und der Betonung von Natürlichkeit behalten die Bilder eine hohe professionelle Qualität. Scharfe Details, korrekte Belichtung und eine ausgewogene Farbwiedergabe sind entscheidend, um ein stimmiges und professionelles Ergebnis zu erzielen. Die Nachbearbeitung zielt darauf ab, sowohl Innen- als auch Außenaufnahmen in ihrer natürlichen Ästhetik zu unterstützen. Kleine Unvollkommenheiten werden dezent korrigiert, um ein harmonisches, aber dennoch authentisches Gesamtbild zu schaffen.</p>","task":"","briefing":"","text_length":"","new_generator":null,"update_task":"","text_length_change":"","update_generator":null,"custom_prompt":"","custom_generator":null,"translate_generator":null},"id":"866cefc8-7be3-41f9-9b49-2b267a95e76d","isHidden":false,"type":"text"}]
+
+----
+
+Idea: Ingenieur, Baustelle, Laptop, Bauzeichnungen, Kran im Hintergrund, Sicherheitsweste, Helm, Sonnenaufgang, urbanes Umfeld, Team im Hintergrund, Interaktion, Besprechung, fokussiert, Planung, Fortschritt, authentisch.
+
+----
+
+Prompt: professional business photography: engineer on construction site, holding laptop, reviewing blueprints, crane in background, wearing safety vest and helmet, sunrise lighting, urban setting, team interacting in background, focused discussion, planning and progress. Style: precise composition, central perspective, natural daylight, soft light intensity, clear horizon, authentic textures, high detail, unedited look, medium complexity, reliable atmosphere, natural contrast, urban environment, subtle background details, authentic professionals, relaxed pose, natural interaction, professional attire, natural colors, soft earthy tones, smooth color transitions, reliable and progressive mood, active composition, subtle motion blur for emphasis, direct and authentic visual language.
+
+----
+
+Aspect-ratio: 3:2
+
+----
+
+Model: flux-1.1-pro-ultra
+
+----
+
+Uuid: wNH0G3MfvsZ43xOH
+
+----
+
+Workflow: presets
+
+----
+
+View: layout
