@@ -20,7 +20,7 @@
     "johannschopplich/kirby-live-preview": "^2.0.1",
     "microman/kirby-form-block-suite": "^4.3.6",
     "schwarzdesign/nxttool-core": "dev-main",
-    "schwarzdesign/nxttool-theme-tailwind": "dev-main",
+    "schwarzdesign/nxttool-theme-tailwind": "dev-main"
   },
   "repositories": [
     {
