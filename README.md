@@ -16,9 +16,34 @@ Starter Projekt for nxttol
 - "schwarzdesign/nxttool-core"
 - "schwarzdesign/nxttool-theme-tailwind"
 
-### Installation in a fresh Kirby CMS project
+### Install a new project
 
+- git clone git@github.com:schwarzdesign/nxttool-starter.git {PROJECT_NAME}
+- cd {PROJECT_NAME}
 
+- Install composer dependencies:
+    - `composer install`
+- Install node:
+    - `npm install`
+    - `npm ci`
+- Build fonts only manual on change:
+    - `npm run fonts`   
+- Build tailwind css, alpine js:
+    - `npm run build`
+    - `npm run watch`
+
+Add the `.env` file and set your OpenAI API key:
+
+```dotenv
+OPENAI_API_KEY=sk-xxxxxxx
+REPLICATE_API_KEY=xxxx
+SMTP_HOST=xxx
+SMTP_PORT=xxx
+SMTP_USER=xxx
+SMTP_PWD=xxx
+ENVIRONMENT={development OR production}
+
+```
 
 ## Support
 
