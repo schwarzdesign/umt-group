@@ -1,0 +1,20 @@
+{
+    "name": "nxttool-starter",
+    "version": "1.0.0",
+    "description": "Nxttool Starter mit Tailwind und Alpine.js",
+    "author": "schwarzdesign",
+    "license": "MIT",
+    "scripts": {
+        "copy:js:dev": "copyfiles -f src/js/alpine.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
+        "copy:js:prod": "copyfiles -f src/js/alpine.min.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
+        "fonts": "copyfiles -u 2 \"src/fonts/**/*\" \"public/assets/fonts\"",
+        "build": "npm run copy:js:prod && npx tailwindcss -i src/css/tailwind.css -o public/assets/css/styles.css -m",
+        "watch": "npm run copy:js:dev && npx tailwindcss -i src/css/tailwind.css -o public/assets/css/styles.css -w"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.9",
+        "@tailwindcss/typography": "^0.5.13",
+        "copyfiles": "^2.4.1",
+        "tailwindcss": "^3.4.17"
+    }
+}

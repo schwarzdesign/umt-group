@@ -1,0 +1,91 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+
+# Temporary files
+# ---------------
+
+/media/*
+!/media/index.html
+
+# Lock files
+# ---------------
+
+.lock
+
+# Editors
+# (sensitive workspace files)
+# ---------------------------
+*.sublime-workspace
+/.vscode
+/.idea
+.editorconfig
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+/site/cache/*
+!/site/cache/index.html
+
+# Accounts
+# ---------------
+
+/site/accounts/*
+!/site/accounts/index.html
+
+# Sessions
+# ---------------
+
+/site/sessions/*
+!/site/sessions/index.html
+
+# License
+# ---------------
+
+/site/config/.license
+
+# Auth storage
+# ---------------
+
+auth.json
+
+# environment variables
+# ---------------
+
+.env
+
+# content folder
+# ---------------
+/content/*
+
+# kirby
+# ---------------
+/kirby/*
+
+# site div
+# ---------------
+/site/accounts/*
+/site/blueprints/*
+/site/cache/*
+/site/sessions/*
+/site/snippets/*
+/site/templates/*
+
+
+# vendor    
+# ---------------
+/vendor/*
+
+# media
+# ---------------
+/media/*
+
+# tmp
+# ---------------
+/tmp/*

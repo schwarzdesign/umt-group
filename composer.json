@@ -1,0 +1,56 @@
+{
+  "name": "schwarzdesign/nxttool-starter",
+  "description": "Kirby Starter Project",
+  "license": "proprietary",
+  "type": "project",
+  "authors": [
+      {
+          "name": "schwarzdesign",
+          "email": "info@schwarzdesign.de"
+      }
+  ],
+  "require": {
+    "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+    "composer/installers": "^2.0",
+    "getkirby/cms": "^4.0",
+    "getkirby/composer-installer": "^1.1",
+    "getkirby/cli": "^1.5",
+    "vlucas/phpdotenv": "^5.6",
+    "johannschopplich/kirby-copilot": "^2.2.1",
+    "johannschopplich/kirby-live-preview": "^2.0.1",
+    "microman/kirby-form-block-suite": "^4.3.6",
+    "schwarzdesign/nxttool-core": "dev-main",
+    "schwarzdesign/nxttool-theme-tailwind": "dev-main",
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/schwarzdesign/nxttool-core"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/schwarzdesign/nxttool-theme-tailwind"
+    }
+  ],
+  "extra": {
+    "installer-paths": {
+      "site/plugins/{$name}/": ["type:kirby-plugin"]
+    }
+  },
+  "minimum-stability": "dev",
+  "scripts": {
+    "dev": [
+      "Composer\\Config::disableProcessTimeout",
+      "@php -S localhost:8000 -t playground/public vendor/getkirby/cms/router.php"
+    ],
+    "csfix": "@php tools/phpcs/vendor/bin/php-cs-fixer fix",
+    "dist": "composer install --no-dev --optimize-autoloader"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "composer/installers": true,
+      "getkirby/composer-installer": true
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "name": "nxttool",
+    "short_name": "nxttool",
+    "theme_color": "#ffffff",
+    "background_color": "#000000",
+    "display": "minimal-ui",
+    "orientation": "portrait",
+    "scope": "/",
+    "id": "/?utm_source=pwa",
+    "start_url": "/?utm_source=pwa",
+    "icons": [
+        { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
+        { "src": "/icon-256.png", "type": "image/png", "sizes": "256x256", "purpose": "any" },
+        { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" }
+    ]
+}
