@@ -5,7 +5,7 @@
     "author": "schwarzdesign",
     "license": "MIT",
     "scripts": {
-        "copy:js:dev": "copyfiles -f src/js/alpine.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
+        "copy:js:dev": "copyfiles -f src/js/alpine.min.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
         "copy:js:prod": "copyfiles -f src/js/alpine.min.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
         "fonts": "copyfiles -u 2 \"src/fonts/**/*\" \"public/assets/fonts\"",
         "build": "npm run copy:js:prod && npx tailwindcss -i src/css/tailwind.css -o public/assets/css/styles.css -m",
