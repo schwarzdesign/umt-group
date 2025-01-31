@@ -37,7 +37,7 @@ return [
             'active' => $isProd,
         ],
     ],
-    "schwarzdesign.nxttool-ai" => [
+    "schwarzdesign.nxttool-core" => [
         "replicate_api_key" => $_ENV["REPLICATE_API_KEY"],
         "text" => [
             "endpoint" => "https://api.openai.com/v1/chat/completions",
