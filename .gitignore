@@ -45,6 +45,23 @@ Icon
 /site/sessions/*
 !/site/sessions/index.html
 
+
+# Nodes Dependencies
+# ---------------
+/node_modules/*
+
+
+# Plugins
+# ---------------
+/site/plugins/*
+
+
+# Public files
+# ---------------
+/public/assets/*
+/public/media/*
+
+
 # License
 # ---------------
 
