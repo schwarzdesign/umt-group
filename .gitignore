@@ -80,6 +80,8 @@ auth.json
 # content folder
 # ---------------
 /content/*
+/content-multisites/*
+!/content-multisites/default/*
 
 # kirby
 # ---------------
