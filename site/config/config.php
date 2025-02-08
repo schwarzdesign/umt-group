@@ -15,6 +15,9 @@ foreach ($lightbox_sizes as $size) {
 
 
 return [
+    "microman.formblock" => [
+         "from_email" => [$_ENV["SMTP_EMAIL"] => "nxttool DEV"]
+     ],
     "johannschopplich.copilot" => [
         "providers" => [
             "openai" => [
@@ -50,8 +53,14 @@ return [
         ],
     ],
     "auth" => [
-        "methods" => ["password", "password-reset"],
-    ],
+         "methods" => ["password", "password-reset"],
+         'challenge' => [
+            'timeout' => 20 * 60, // 20 minutes
+            'email' => [
+                'from' => $_ENV["SMTP_EMAIL"]
+		    ]
+	 ]
+     ],
     "email" => [
         "transport" => [
             "type" => "smtp",
