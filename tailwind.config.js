@@ -68,10 +68,6 @@ module.exports = {
             "font-style": "normal",
             "font-variation-settings": '"slnt" -10',
           },
-          em: {
-            "font-style": "normal",
-            "font-variation-settings": '"slnt" -10',
-          },
         },
         ["responsive", "hover"],
       );
