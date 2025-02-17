@@ -12,13 +12,6 @@
   "require": {
     "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
     "composer/installers": "^2.0",
-    "getkirby/cms": "^4.0",
-    "getkirby/composer-installer": "^1.1",
-    "getkirby/cli": "^1.5",
-    "vlucas/phpdotenv": "^5.6",
-    "johannschopplich/kirby-copilot": "^2.2.1",
-    "johannschopplich/kirby-live-preview": "^2.0.1",
-    "microman/kirby-form-block-suite": "^4.3.6",
     "schwarzdesign/nxttool-core": "dev-main",
     "schwarzdesign/nxttool-theme-tailwind": "dev-main"
   },
