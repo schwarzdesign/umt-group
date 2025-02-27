@@ -12,21 +12,23 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary: rgb(98 112 147);
-  --color-primary_inverse: rgb(98 112 147);
-  --color-secondary: rgb(201 55 94);
-  --color-secondary_inverse: rgb(201 55 94);
+  --color-primary: rgb(219 53 44);
+  --color-primary_inverse: rgb(255 109 51);
   --color-text: rgb(0 0 0);
   --color-text_inverse: rgb(255 255 255);
-  --color-muted: rgb(87 87 87);
-  --color-muted_inverse: rgb(220 220 220);
-  --color-borders: rgb(220 214 203);
-  --color-borders_inverse: rgb(89 87 84);
+  --color-muted: rgb(63 63 63);
+  --color-muted_inverse: rgb(220 214 203);
+  --color-muted_secondary: rgb(74 79 70);
+  --color-muted_secondary_inverse: rgb(210 224 200);
+  --color-borders: rgb(158 151 138);
+  --color-borders_inverse: rgb(79 76 70);
   --color-footer: rgb(51 51 51);
   --color-background: rgb(249 249 249);
   --color-background_inverse: rgb(21 21 21);
   --color-background_muted: rgb(220 214 203);
-  --color-background_muted_inverse: rgb(89 87 84);
+  --color-background_muted_inverse: rgb(63 63 63);
+  --color-background_muted_secondary: rgb(210 224 200);
+  --color-background_muted_secondary_inverse: rgb(74 79 70);
   --color-success: rgb(40 167 69);
   --color-info: rgb(23 162 184);
   --color-warning: rgb(255 193 7);
@@ -80,13 +82,22 @@ figcaption > footer {
   @apply text-muted dark:text-muted_inverse italic inline;
 }
 p:not(.formblock p, .search-teaser p, footer p) {
-  @apply mb-8 text-lg leading-relaxed;
+  @apply mb-8;
 }
 
-img:not(.banner-image) {
+img:not(.banner-image, .footer-image) {
   @apply max-w-full h-auto rounded-md;
 }
-a:not(.btn-primary, .btn-secondary, .link-arrow, .img-link, .icon-link),
+
+a:not(
+    .btn-primary,
+    .btn-secondary,
+    .btn,
+    .btn-outline,
+    .link-arrow,
+    .img-link,
+    .icon-link
+  ),
 .menu button {
   @apply hover:text-primary dark:hover:text-primary_inverse focus:text-primary dark:focus:text-primary_inverse;
 }
@@ -95,6 +106,7 @@ a:not(
     footer a,
     .btn-primary,
     .btn-secondary,
+    .btn,
     .link-arrow,
     .link-list-teaser a,
     .search-teaser a,
@@ -152,83 +164,114 @@ ol li {
   text-shadow: none;
 }
 
+@utility btn {
+  @apply rounded-md border-2 text-text_inverse border border-solid bg-primary border-primary px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65 hover:text-text_inverse focus:text-text_inverse;
+}
+
+@utility btn-inverse {
+  @apply rounded-md border-2 text-text_inverse border border-solid bg-primary_inverse border-primary_inverse px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65;
+}
+
+@utility btn-outline {
+  @apply rounded-md border-2 text-text dark:text-text_inverse border border-solid bg-transparent border-text
+      dark:border-text_inverse px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65;
+}
+
+@utility btn-outline-inverse {
+  @apply rounded-md border-2 text-text_inverse dark:text-text border-solid bg-transparent border-text_inverse
+    dark:border-text px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65;
+}
+
 @layer components {
+  /* Buttons + Links */
   .btn-primary {
-    @apply rounded-md border-2 inline-block border-solid border-primary bg-primary px-3.5 py-2.5 text-lg font-semibold text-text_inverse shadow-sm hover:bg-primary_inverse focus:bg-primary_inverse dark:bg-primary_inverse dark:border-primary_inverse dark:focus:bg-primary dark:hover:bg-primary dark:focus:border-primary dark:hover:border-primary;
+    @apply btn;
   }
   .btn-secondary {
-    @apply rounded-md border-2 inline-block border-solid bg-transparent dark:border-primary_inverse px-3.5 py-2.5 text-lg font-semibold text-primary dark:text-primary_inverse hover:text-primary_inverse focus:text-primary_inverse dark:hover:text-primary dark:focus:text-primary border-primary hover:border-primary_inverse focus:border-primary_inverse dark:focus:border-primary dark:hover:border-primary;
+    @apply btn-outline;
   }
   .link-arrow {
-    @apply text-lg font-semibold leading-6 px-2 hover:text-primary dark:hover:text-primary_inverse focus:text-primary dark:focus:text-primary_inverse;
+    @apply leading-6 px-2 underline underline-offset-4 decoration-1 font-semibold hover:text-primary dark:hover:text-primary_inverse focus:text-primary dark:focus:text-primary_inverse;
   }
-  .menu .active {
-    @apply underline underline-offset-4 decoration-2;
-  }
-  .page-navigation li a {
-    @apply hover:text-primary dark:hover:text-primary_inverse focus:text-primary dark:focus:text-primary_inverse;
-  }
-  .page-navigation li.active a {
-    @apply text-primary dark:text-primary_inverse;
-  }
-
-  .teaser-muted {
-    @apply bg-background_muted dark:bg-background_muted_inverse text-text dark:text-text_inverse;
-  }
-  .teaser-inverse {
-    @apply bg-background_inverse dark:bg-background text-text_inverse dark:text-text;
-  }
-  .teaser-transparent {
-    @apply bg-transparent text-text dark:text-text_inverse;
-  }
+  /* Sections */
   .section-muted {
     @apply bg-background_muted dark:bg-background_muted_inverse text-text dark:text-text_inverse;
+  }
+  .section-muted-secondary {
+    @apply bg-background_muted_secondary dark:bg-background_muted_secondary_inverse text-text dark:text-text_inverse;
   }
   .section-inverse {
     @apply bg-background_inverse dark:bg-background text-text_inverse dark:text-text;
   }
+  /* Buttons per Background */
+  .section-inverse .btn-primary {
+    @apply btn-inverse;
+  }
+  .section-inverse .btn-secondary {
+    @apply btn-outline-inverse;
+  }
+  /* Teaser */
+  .teaser-default,
   .section-inverse .teaser-inverse {
     @apply bg-background dark:bg-background_inverse text-text dark:text-text_inverse;
   }
-  .section-transparent {
-    @apply bg-transparent text-text dark:text-text_inverse;
+  .teaser-inverse,
+  .section-transparent .teaser-default {
+    @apply bg-background_inverse dark:bg-background text-text_inverse dark:text-text;
   }
-  .section-inverse .teaser-transparent {
-    @apply bg-transparent text-text_inverse dark:text-text;
+  .teaser-muted,
+  .section-transparent .teaser-muted {
+    @apply bg-background_muted dark:bg-background_muted_inverse text-text dark:text-text_inverse;
   }
-  /* .section-inverse .teaser-muted {
+  .teaser-muted-secondary,
+  .section-transparent .teaser-muted-secondary {
+    @apply bg-background_muted_secondary dark:bg-background_muted_secondary_inverse text-text dark:text-text_inverse;
+  }
+  .section-inverse .teaser-muted {
     @apply bg-background_muted_inverse dark:bg-background_muted text-text_inverse dark:text-text;
-  } */
-  .section-inverse .teaser-inverse .btn-secondary {
-    @apply text-primary dark:text-primary border-primary dark:border-primary;
   }
-  /* .section-muted .teaser-muted {
-    @apply bg-background_muted_inverse dark:bg-background_muted text-text_inverse dark:text-text;
-  } */
-  .line-muted {
-    @apply text-muted dark:text-muted_inverse;
+  /* Muted/Primary  Texts */
+  .line-primary {
+    @apply text-primary dark:text-primary_inverse;
   }
-  .teaser-muted .line-muted,
-  .section-muted .line-muted {
+  .line-muted-inverse,
+  .teaser-inverse .line-muted,
+  .section-inverse .line-muted {
     @apply text-muted_inverse dark:text-muted;
   }
-  .teaser-inverse .line-muted {
-    @apply text-text_inverse dark:text-text;
-  }
-  .section-muted .teaser-muted .line-muted {
+  .line-muted,
+  .section-inverse .teaser-inverse .line-muted {
     @apply text-muted dark:text-muted_inverse;
   }
-  .section-inverse .teaser-muted .line-muted {
-    @apply text-text_inverse dark:text-text;
+  /* bg special */
+  .bg-bullet-default {
+    @apply bg-muted dark:bg-muted_inverse;
   }
-  .section-inverse .teaser-inverse .line-muted {
+  .section-inverse .bg-bullet-default {
+    @apply bg-text_inverse dark:bg-text;
+  }
+  /* Headlines per Background */
+  .headline-inverse {
     @apply text-text dark:text-text_inverse;
   }
-
-  .line-primary {
-    @apply text-primary dark:text-primary_inverse hover:text-primary_inverse focus:text-primary_inverse dark:hover:text-primary dark:focus:text-primary;
+  /* Buttons / Texts per Teaser and Sections */
+  .teaser-inverse .btn-secondary {
+    @apply btn-outline-inverse;
+  }
+  .teaser-inverse .btn-primary,
+  .teaser-inverse .btn {
+    @apply btn-inverse;
+  }
+  /* Menu */
+  .menu .active,
+  .footer-menu .active {
+    @apply underline underline-offset-4 decoration-2 font-semibold;
+  }
+  /* Pagination */
+  .page-navigation li.active a {
+    @apply font-semibold;
   }
   .rating .star {
-    color: rgb(var(--rating));
+    @apply text-rating;
   }
 }
