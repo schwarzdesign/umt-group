@@ -82,7 +82,7 @@ return [
                 "1536w" => ["width" => 1536, "format" => "webp"],
             ],
         ],
-        
+        "enlarge" => $enlarge_size,
     ],
     "search.include.templates" => [
         "home",
