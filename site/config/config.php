@@ -5,14 +5,7 @@ $environment = $_ENV["ENVIRONMENT"] ?: 'development';
 $isDev = 'development' === $environment;
 $isProd = 'production' === $environment;
 
-$lightbox_sizes = [360, 480, 640, 800, 1280, 1600, 1920, 2400, 3200];
-$lightbox_srcset = [];
-
-foreach ($lightbox_sizes as $size) {
-    $lightbox_srcset["{$size}w"] = ["width" => $size, "format" => "webp"];
-}
-
-
+$enlarge_size = 1600;
 
 return [
     "microman.formblock" => [
@@ -88,7 +81,6 @@ return [
                 "1280w" => ["width" => 1280, "format" => "webp"],
                 "1536w" => ["width" => 1536, "format" => "webp"],
             ],
-            "lightbox" => $lightbox_srcset,
         ],
         
     ],
