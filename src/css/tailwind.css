@@ -64,9 +64,14 @@ h3 {
 h4 {
   @apply text-xl leading-tight font-bold scroll-mt-6;
 }
-.block h2:not(.teaser h2),
-.block h3:not(.teaser h3),
-.block h4 {
+
+.layout-block {
+  @apply mb-8;
+}
+
+.layout-block h2:not(.teaser h2),
+.layout-block h3:not(.teaser h3),
+.layout-block h4 {
   @apply mt-0;
 }
 
