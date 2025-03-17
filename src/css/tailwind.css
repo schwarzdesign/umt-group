@@ -52,6 +52,10 @@ html {
   @apply leading-relaxed font-normal not-italic text-base text-black dark:text-white bg-background dark:bg-background_inverse;
 }
 
+.container {
+  @apply mx-auto px-10 max-w-7xl;
+}
+
 h1 {
   @apply text-4xl mb-4 leading-tight font-bold xl:text-5xl tracking-tight scroll-mt-6;
 }
