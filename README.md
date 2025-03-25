@@ -45,6 +45,17 @@ ENVIRONMENT={development OR production}
 
 ```
 
+Add repository secrets for sftp / ftp deployment:
+
+REMOTE_PROTOCOL => Remote file transfer protocol (ftp, sftp)
+REMOTE_HOST => Remote host
+REMOTE_USER => 	FTP/SSH username
+REMOTE_PASSWORD => FTP/SSH password
+REMOTE_PATH => Remote path on host
+REMOTE_PORT => Remote port
+
+
+
 ## Support
 
 For support or further inquiries, please contact [info@schwarzdesign.de](mailto:info@schwarzdesign.de).
