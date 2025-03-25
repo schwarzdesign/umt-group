@@ -191,6 +191,10 @@ ol li {
     dark:border-text px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65;
 }
 
+@utility btn-pillow {
+  @apply bg-primary dark:bg-primary_inverse w-8 h-8 text-text_inverse rounded-full flex items-center justify-center;
+}
+
 @layer components {
   /* Buttons + Links */
   .btn-primary {
@@ -198,6 +202,9 @@ ol li {
   }
   .btn-secondary {
     @apply btn-outline;
+  }
+  .btn-edit {
+    @apply btn-pillow fixed bottom-3 right-3;
   }
   .link-arrow {
     @apply leading-6 px-2 underline underline-offset-4 decoration-1 font-semibold hover:text-primary dark:hover:text-primary_inverse focus:text-primary dark:focus:text-primary_inverse;
