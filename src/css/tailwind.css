@@ -103,6 +103,9 @@ a:not(
     .btn-secondary,
     .btn,
     .btn-outline,
+    .btn-outline-inverse,
+    .btn-pillow,
+    .btn-edit,
     .link-arrow,
     .img-link,
     .icon-link
@@ -192,7 +195,7 @@ ol li {
 }
 
 @utility btn-pillow {
-  @apply bg-primary dark:bg-primary_inverse w-8 h-8 text-text_inverse rounded-full flex items-center justify-center;
+  @apply bg-primary dark:bg-primary_inverse w-8 h-8 text-text_inverse rounded-full flex items-center justify-center hover:opacity-65 focus:opacity-65;
 }
 
 @layer components {
