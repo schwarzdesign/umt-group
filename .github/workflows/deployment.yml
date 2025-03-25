@@ -1,0 +1,56 @@
+
+name: Deployment
+
+on:
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+      sync:
+        description: "File synchronization"
+        required: true
+        default: "delta"
+        type: choice
+        options:
+          - delta
+          - full
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: PHP Setup
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.3
+          tools: composer
+      - name: Composer Install
+        run: composer install --no-scripts --no-dev --no-progress --no-interaction --prefer-dist --optimize-autoloader
+      - name: NodeJS Installation
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: NPM Installation & Build
+        run: |
+          npm i -g npm@10
+          npm ci
+          npm run fonts
+          npm run build
+      - name: "Deploy"
+        uses: milanmk/actions-file-deployer@master
+        with:
+          remote-protocol: ${{ secrets.REMOTE_PROTOCOL }}
+          remote-host: ${{ secrets.REMOTE_HOST }}
+          remote-user: ${{ secrets.REMOTE_USER }}
+          remote-password: ${{ secrets.REMOTE_PASSWORD }}
+          remote-path: ${{ secrets.REMOTE_PATH }}
+          remote-port: ${{ secrets.REMOTE_PORT }}
+          sync: ${{ github.event.inputs.sync }}
+          debug: true
+          artifacts: true
+          ftp-mirror-options: "--exclude node_modules/ --exclude .git/ --exclude .github/ --exclude site/accounts/ --exclude public/.htaccess"
