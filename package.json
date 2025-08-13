@@ -1,9 +1,13 @@
 {
-    "name": "nxttool-starter",
+    "name": "umt-group",
     "version": "1.0.0",
-    "description": "Nxttool Starter mit Tailwind und Alpine.js",
+    "description": "UMT Group Website mit Tailwind und Alpine.js",
     "author": "schwarzdesign",
     "license": "MIT",
+    "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=8.0.0"
+    },
     "scripts": {
         "copy:js:dev": "copyfiles -f src/js/alpine.min.js public/assets/js/ && copyfiles -f src/js/alpine.focus.min.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
         "copy:js:prod": "copyfiles -f src/js/alpine.min.js public/assets/js/ && copyfiles -f src/js/alpine.focus.min.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",

@@ -8,20 +8,35 @@ $isProd = 'production' === $environment;
 $enlarge_size = 1600;
 
 return [
-    "microman.formblock" => [
+    "plain.formblock" => [
          "from_email" => [$_ENV["SMTP_EMAIL"] => "nxttool DEV"]
      ],
     "johannschopplich.copilot" => [
         "providers" => [
             "openai" => [
-                "model" => "gpt-4o-2024-11-20",
+                "model" => "gpt-4.1",
                 "apiKey" => $_ENV["OPENAI_API_KEY"],
             ],
         ],
         "systemPrompt" =>
             "Bei Antworten im HTML-Fomat: Geben nur den Inhalt aus, der in die <body>-Tags passen würde. Der <head>-Abschnitt oder andere Teile einer vollständigen HTML-Dokumentenstruktur dürfen nicht enthalten sein. Entferne alle Markdown-Formatierungen.",
         "temperature" => 0.8,
-        "maxGenerationTokens" => 16000,
+        "maxGenerationTokens" => 32000,
+        "excludedBlocks" => [
+            "quote",
+            "button",
+            "cta",
+            "link-list",
+            "teaser",
+            "person",
+            "form",
+            "gallery",
+            "image",
+            "video",
+            "markdown",
+            "list",
+            "code"
+        ]
     ],
     'debug' => true,
     "languages" => true,
@@ -37,7 +52,8 @@ return [
         "replicate_api_key" => $_ENV["REPLICATE_API_KEY"],
         "text" => [
             "endpoint" => "https://api.openai.com/v1/chat/completions",
-            "model" => "gpt-4o-2024-11-20",
+            "model" => "gpt-4.1",
+            "fast" => "gpt-4.1-mini",
             "apiKey" => $_ENV["OPENAI_API_KEY"],
             "temperature" => 0.8,
             "maxGenerationTokens" => 16000,
