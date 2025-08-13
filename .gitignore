@@ -14,7 +14,6 @@ Icon
 # ---------------
 
 .lock
-package-lock.json
 
 # Editors
 # (sensitive workspace files)
