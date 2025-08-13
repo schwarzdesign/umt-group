@@ -1,5 +1,5 @@
-# nxttool-starter
-Starter Projekt for nxttol
+# umt-group
+UMT Group Website
 
 ## Installation
 
@@ -8,6 +8,8 @@ Starter Projekt for nxttol
 #### Required
 
 - PHP version: ~8.1.0, ~8.2.0, or ~8.3.0
+- Node.js version: >=18.0.0 (empfohlen: 20.x LTS)
+- npm version: >=8.0.0
 - Kirby CMS: ^4.0
 - Composer
 
@@ -18,12 +20,16 @@ Starter Projekt for nxttol
 
 ### Install a new project
 
-- git clone git@github.com:schwarzdesign/nxttool-starter.git {PROJECT_NAME}
+- git clone git@github.com:schwarzdesign/umt-group.git {PROJECT_NAME}
 - cd {PROJECT_NAME}
+
+**Wichtig: Stellen Sie sicher, dass Sie Node.js 18+ verwenden:**
+- Überprüfen Sie Ihre Node-Version: `node --version`
+- Bei Bedarf aktualisieren Sie Node.js auf Version 20 LTS
 
 - Install composer dependencies:
     - `composer install`
-- Install node:
+- Install node dependencies:
     - `npm install`
     - `npm ci`
 - Build fonts only manual on change:
