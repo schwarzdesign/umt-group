@@ -107,3 +107,6 @@ auth.json
 # tmp
 # ---------------
 /tmp/*
+site/config/.formblock_license
+site/config/.kirby-tools-licenses
+site/config/.kirby-tools-licenses
