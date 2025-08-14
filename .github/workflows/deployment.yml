@@ -33,6 +33,7 @@ jobs:
         run: |
           npm i -g npm@10
           npm ci
+          npm run fonts
           npm run build
 
       - name: Install sshpass
