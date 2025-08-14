@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "65ad4dcedde11a88f81f54cbde779809",
+    "content-hash": "d3c7b2ea0023533f92951404db801246",
     "packages": [
         {
             "name": "bnomei/kirby3-janitor",
@@ -1899,12 +1899,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:schwarzdesign/nxttool-core.git",
-                "reference": "924570bea66cdd9b4f5063bb5ae83fc6d4a144ee"
+                "reference": "a1a305fa3ddc771bdcdb59687663d6a4807372fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schwarzdesign/nxttool-core/zipball/924570bea66cdd9b4f5063bb5ae83fc6d4a144ee",
-                "reference": "924570bea66cdd9b4f5063bb5ae83fc6d4a144ee",
+                "url": "https://api.github.com/repos/schwarzdesign/nxttool-core/zipball/a1a305fa3ddc771bdcdb59687663d6a4807372fa",
+                "reference": "a1a305fa3ddc771bdcdb59687663d6a4807372fa",
                 "shasum": ""
             },
             "require": {
@@ -1936,7 +1936,7 @@
                 "source": "https://github.com/schwarzdesign/nxttool-core/tree/main",
                 "issues": "https://github.com/schwarzdesign/nxttool-core/issues"
             },
-            "time": "2025-08-08T06:13:48+00:00"
+            "time": "2025-08-14T13:58:24+00:00"
         },
         {
             "name": "schwarzdesign/nxttool-theme-tailwind",
