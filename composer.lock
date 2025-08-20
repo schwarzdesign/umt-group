@@ -421,16 +421,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.18.3",
+            "version": "2.18.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "59a123a3d459c5a23055802237cb317f609867e5"
+                "reference": "d2102955e48b9fd9ab24280a7ad12ed552752c4d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/59a123a3d459c5a23055802237cb317f609867e5",
-                "reference": "59a123a3d459c5a23055802237cb317f609867e5",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/d2102955e48b9fd9ab24280a7ad12ed552752c4d",
+                "reference": "d2102955e48b9fd9ab24280a7ad12ed552752c4d",
                 "shasum": ""
             },
             "require": {
@@ -480,7 +480,7 @@
             ],
             "support": {
                 "issues": "https://github.com/filp/whoops/issues",
-                "source": "https://github.com/filp/whoops/tree/2.18.3"
+                "source": "https://github.com/filp/whoops/tree/2.18.4"
             },
             "funding": [
                 {
@@ -488,7 +488,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-06-16T00:02:10+00:00"
+            "time": "2025-08-08T12:00:00+00:00"
         },
         {
             "name": "getkirby/cli",
@@ -558,16 +558,16 @@
         },
         {
             "name": "getkirby/cms",
-            "version": "5.0.3",
+            "version": "5.1.0-rc.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/getkirby/kirby.git",
-                "reference": "572dab320d31a84ebb140eb0a4268f91b8a0572c"
+                "reference": "29b38b4b6cf08ddcbff7b879297ee84060609916"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/getkirby/kirby/zipball/572dab320d31a84ebb140eb0a4268f91b8a0572c",
-                "reference": "572dab320d31a84ebb140eb0a4268f91b8a0572c",
+                "url": "https://api.github.com/repos/getkirby/kirby/zipball/29b38b4b6cf08ddcbff7b879297ee84060609916",
+                "reference": "29b38b4b6cf08ddcbff7b879297ee84060609916",
                 "shasum": ""
             },
             "require": {
@@ -585,7 +585,7 @@
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
                 "ext-simplexml": "*",
-                "filp/whoops": "2.18.3",
+                "filp/whoops": "2.18.4",
                 "getkirby/composer-installer": "^1.2.1",
                 "laminas/laminas-escaper": "2.17.0",
                 "michelf/php-smartypants": "1.8.1",
@@ -593,7 +593,7 @@
                 "phpmailer/phpmailer": "6.10.0",
                 "symfony/polyfill-intl-idn": "1.32.0",
                 "symfony/polyfill-mbstring": "1.32.0",
-                "symfony/yaml": "7.3.1"
+                "symfony/yaml": "7.3.2"
             },
             "replace": {
                 "symfony/polyfill-php72": "*"
@@ -603,6 +603,7 @@
                 "ext-apcu": "Support for the Apcu cache driver",
                 "ext-exif": "Support for exif information from images",
                 "ext-fileinfo": "Improved mime type detection for files",
+                "ext-imagick": "Improved thumbnail generation",
                 "ext-intl": "Improved i18n number formatting",
                 "ext-memcached": "Support for the Memcached cache driver",
                 "ext-redis": "Support for the Redis cache driver",
@@ -658,7 +659,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-07-29T09:32:34+00:00"
+            "time": "2025-08-19T09:31:33+00:00"
         },
         {
             "name": "getkirby/composer-installer",
@@ -1599,16 +1600,16 @@
         },
         {
             "name": "plain/kirby-form-block-suite",
-            "version": "5.1.1",
+            "version": "5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/plain-solutions-gmbh/kirby-form-block-suite.git",
-                "reference": "db22b8e1295f87567abb57867cb160064271778d"
+                "reference": "1fc7beb16515c996c563eebb03697770d520ba63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/plain-solutions-gmbh/kirby-form-block-suite/zipball/db22b8e1295f87567abb57867cb160064271778d",
-                "reference": "db22b8e1295f87567abb57867cb160064271778d",
+                "url": "https://api.github.com/repos/plain-solutions-gmbh/kirby-form-block-suite/zipball/1fc7beb16515c996c563eebb03697770d520ba63",
+                "reference": "1fc7beb16515c996c563eebb03697770d520ba63",
                 "shasum": ""
             },
             "require": {
@@ -1632,9 +1633,9 @@
             "homepage": "https://plain-solutions.net/801346",
             "support": {
                 "issues": "https://github.com/plain-solutions-gmbh/kirby-form-block-suite/issues",
-                "source": "https://github.com/plain-solutions-gmbh/kirby-form-block-suite/tree/v5.1.1"
+                "source": "https://github.com/plain-solutions-gmbh/kirby-form-block-suite/tree/v5.1.4"
             },
-            "time": "2025-05-14T23:18:26+00:00"
+            "time": "2025-08-17T11:44:47+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1899,12 +1900,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:schwarzdesign/nxttool-core.git",
-                "reference": "a1a305fa3ddc771bdcdb59687663d6a4807372fa"
+                "reference": "ea4198768bd49db346de10f91cd6c6311d814423"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schwarzdesign/nxttool-core/zipball/a1a305fa3ddc771bdcdb59687663d6a4807372fa",
-                "reference": "a1a305fa3ddc771bdcdb59687663d6a4807372fa",
+                "url": "https://api.github.com/repos/schwarzdesign/nxttool-core/zipball/ea4198768bd49db346de10f91cd6c6311d814423",
+                "reference": "ea4198768bd49db346de10f91cd6c6311d814423",
                 "shasum": ""
             },
             "require": {
@@ -1936,7 +1937,7 @@
                 "source": "https://github.com/schwarzdesign/nxttool-core/tree/main",
                 "issues": "https://github.com/schwarzdesign/nxttool-core/issues"
             },
-            "time": "2025-08-14T13:58:24+00:00"
+            "time": "2025-08-20T07:31:28+00:00"
         },
         {
             "name": "schwarzdesign/nxttool-theme-tailwind",
@@ -1944,12 +1945,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:schwarzdesign/nxttool-theme-tailwind.git",
-                "reference": "67daba58d2f79f05113dc5ecda5620ae819f3c3c"
+                "reference": "ad6fed2892e0deff6862fa6e3a6bad4543a3d1ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schwarzdesign/nxttool-theme-tailwind/zipball/67daba58d2f79f05113dc5ecda5620ae819f3c3c",
-                "reference": "67daba58d2f79f05113dc5ecda5620ae819f3c3c",
+                "url": "https://api.github.com/repos/schwarzdesign/nxttool-theme-tailwind/zipball/ad6fed2892e0deff6862fa6e3a6bad4543a3d1ed",
+                "reference": "ad6fed2892e0deff6862fa6e3a6bad4543a3d1ed",
                 "shasum": ""
             },
             "require": {
@@ -1973,7 +1974,7 @@
                 "source": "https://github.com/schwarzdesign/nxttool-theme-tailwind/tree/main",
                 "issues": "https://github.com/schwarzdesign/nxttool-theme-tailwind/issues"
             },
-            "time": "2025-03-25T10:08:04+00:00"
+            "time": "2025-08-19T16:13:44+00:00"
         },
         {
             "name": "seld/cli-prompt",
@@ -2232,7 +2233,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.32.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.33.0"
             },
             "funding": [
                 {
@@ -2401,7 +2402,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.32.0"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.33.0"
             },
             "funding": [
                 {
@@ -2567,7 +2568,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.32.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.33.0"
             },
             "funding": [
                 {
@@ -2591,16 +2592,16 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v7.3.1",
+            "version": "v7.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "0c3555045a46ab3cd4cc5a69d161225195230edb"
+                "reference": "b8d7d868da9eb0919e99c8830431ea087d6aae30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/0c3555045a46ab3cd4cc5a69d161225195230edb",
-                "reference": "0c3555045a46ab3cd4cc5a69d161225195230edb",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/b8d7d868da9eb0919e99c8830431ea087d6aae30",
+                "reference": "b8d7d868da9eb0919e99c8830431ea087d6aae30",
                 "shasum": ""
             },
             "require": {
@@ -2643,7 +2644,7 @@
             "description": "Loads and dumps YAML files",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/yaml/tree/v7.3.1"
+                "source": "https://github.com/symfony/yaml/tree/v7.3.2"
             },
             "funding": [
                 {
@@ -2655,11 +2656,15 @@
                     "type": "github"
                 },
                 {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
                     "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-03T06:57:57+00:00"
+            "time": "2025-07-10T08:47:49+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
