@@ -1,27 +1,32 @@
 {
-    "name": "umt-group",
-    "version": "1.0.0",
-    "description": "UMT Group Website mit Tailwind und Alpine.js",
-    "author": "schwarzdesign",
-    "license": "MIT",
-    "engines": {
-        "node": ">=18.0.0",
-        "npm": ">=8.0.0"
-    },
-    "scripts": {
-        "copy:js:dev": "copyfiles -f src/js/alpine.min.js public/assets/js/ && copyfiles -f src/js/alpine.focus.min.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
-        "copy:js:prod": "copyfiles -f src/js/alpine.min.js public/assets/js/ && copyfiles -f src/js/alpine.focus.min.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
-        "fonts": "copyfiles -u 2 \"src/fonts/**/*\" \"public/assets/fonts\"",
-        "build": "npm run copy:js:prod && npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/styles.css -m",
-        "watch": "npm run copy:js:dev && npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/styles.css -w"
-    },
-    "devDependencies": {
-        "@tailwindcss/forms": "^0.5.9",
-        "@tailwindcss/typography": "^0.5.13",
-        "copyfiles": "^2.4.1",
-        "tailwindcss": "^4.0.6"
-    },
-    "dependencies": {
-        "@tailwindcss/cli": "^4.0.6"
-    }
+  "type": "module",
+  "name": "umt-group",
+  "version": "1.0.0",
+  "private": true,
+  "description": "UMT Group Website mit Tailwind und Alpine.js",
+  "author": "schwarzdesign",
+  "license": "MIT",
+  "scripts": {
+    "copy:js:dev": "copyfiles -f src/js/alpine.min.js public/assets/js/ && copyfiles -f src/js/alpine.focus.min.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
+    "copy:js:prod": "copyfiles -f src/js/alpine.min.js public/assets/js/ && copyfiles -f src/js/alpine.focus.min.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
+    "fonts": "copyfiles -u 2 \"src/fonts/**/*\" \"public/assets/fonts\"",
+
+    "build:default": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/styles.css -m",
+    "build:dynamic": "node ./tools/css-multisite.js build",
+    "build": "npm run copy:js:prod && npm run build:default && npm run build:dynamic",
+
+    "watch:default": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/styles.css -w",
+    "watch:dynamic": "node ./tools/css-multisite.js watch",
+    "watch": "npm run copy:js:dev && npm-run-all --parallel watch:default watch:dynamic"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/typography": "^0.5.13",
+    "copyfiles": "^2.4.1",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^4.1.0"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.0"
+  }
 }
