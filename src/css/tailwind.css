@@ -12,54 +12,87 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-primary: rgb(219 53 44);
-  --color-primary_inverse: rgb(255 109 51);
-  --color-text: rgb(0 0 0);
-  --color-text_inverse: rgb(255 255 255);
-  --color-muted: rgb(63 63 63);
-  --color-muted_inverse: rgb(220 214 203);
-  --color-muted_secondary: rgb(74 79 70);
-  --color-muted_secondary_inverse: rgb(210 224 200);
-  --color-borders: rgb(158 151 138);
-  --color-borders_inverse: rgb(79 76 70);
-  --color-footer: rgb(51 51 51);
-  --color-background: rgb(249 249 249);
-  --color-background_inverse: rgb(21 21 21);
-  --color-background_muted: rgb(220 214 203);
-  --color-background_muted_inverse: rgb(63 63 63);
-  --color-background_muted_secondary: rgb(210 224 200);
-  --color-background_muted_secondary_inverse: rgb(74 79 70);
-  --color-success: rgb(40 167 69);
-  --color-info: rgb(23 162 184);
-  --color-warning: rgb(255 193 7);
-  --color-error: rgb(220 53 69);
-  --color-rating: rgb(251 193 18);
+  --color-primary: #063f70;
+  --color-primary_inverse: #063f70;
+  --color-text: #121212;
+  --color-text_inverse: #ffffff;
+  --color-muted: #66707a;
+  --color-muted_inverse: #66707a;
+  --color-muted_secondary: #66707a;
+  --color-muted_secondary_inverse: #66707a;
+  --color-borders: #cccccc;
+  --color-borders_inverse: #cccccc;
+  --color-footer: #333333;
+  --color-background: #ffffff;
+  --color-background_inverse: #2b5b70;
+  --color-background_muted: #dbdbdb;
+  --color-background_muted_inverse: #dbdbdb;
+  --color-background_muted_secondary: #dbdbdb;
+  --color-background_muted_secondary_inverse: #dbdbdb;
+  --color-success: #28a745;
+  --color-info: #17a2b8;
+  --color-warning: #ffc107;
+  --color-error: #dc3545;
+  --color-rating: #fbc112;
 }
 @font-face {
-  font-family: "Inter";
-  font-style: oblique 0deg 10deg;
+  font-family: "Anybody";
+  font-style: normal;
   font-weight: 100 900;
+  font-stretch: 100%;
   font-display: swap;
-  src: url(/assets/fonts/inter/v13/inter-all.woff2) format("woff2");
+  src: url(/assets/fonts/anybody/v12/anybody-regular.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
-    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191,
-    U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Anybody Italic";
+  font-style: italic;
+  font-weight: 100 900;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(/assets/fonts/anybody/v12/anybody-italic.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @utility font-normal {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Anybody", Arial sans-serif;
   font-optical-sizing: auto;
-  font-variation-settings: "slnt" 0;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 @utility font-bold {
-  font-family: "Inter", Arial, sans-serif;
+  font-family: "Anybody", Arial sans-serif;
   font-optical-sizing: auto;
-  font-variation-settings: "slnt" 0;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+@utility font-italic {
+  font-family: "Anybody Italic", Arial sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-variation-settings: "wdth" 100;
+}
+
+@utility font-italic-bold {
+  font-family: "Anybody Italic", Arial sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  font-variation-settings: "wdth" 100;
 }
 
 @utility container-py {
-  @apply py-20;
+  @apply py-20 md:py-25;
 }
 @utility container-py-small {
   @apply py-10;
@@ -77,10 +110,13 @@
   @apply pb-10;
 }
 @utility container-px {
-  @apply px-10;
+  @apply px-25;
+}
+@utility container-px-small {
+  @apply px-5;
 }
 @utility container {
-  @apply mx-auto container-px max-w-7xl;
+  @apply mx-auto container-px-small md:container-px max-w-7xl;
 }
 @utility layout_column_12 {
   @apply md:col-span-12;
@@ -99,7 +135,7 @@
   @apply md:col-span-6 lg:col-span-3;
 }
 @utility grid_default {
-  @apply grid lg:grid-cols-12 lg:gap-10;
+  @apply grid md:grid-cols-12 md:gap-10;
 }
 
 @utility text-shadow-sm {
@@ -127,14 +163,6 @@
   text-shadow: none;
 }
 
-@utility btn {
-  @apply rounded-md border-2 text-text_inverse border border-solid bg-primary border-primary px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65 hover:text-text_inverse focus:text-text_inverse;
-}
-
-@utility btn-inverse {
-  @apply rounded-md border-2 text-text_inverse border border-solid bg-primary_inverse border-primary_inverse px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65;
-}
-
 @utility btn-outline {
   @apply rounded-md border-2 text-text dark:text-text_inverse border border-solid bg-transparent border-text
       dark:border-text_inverse px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65;
@@ -145,8 +173,17 @@
     dark:border-text px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65;
 }
 
+@utility btn {
+  @apply btn-outline;
+}
+
+@utility btn-inverse {
+  @apply btn-outline-inverse;
+}
+
 @utility btn-pillow {
-  @apply bg-primary dark:bg-primary_inverse w-8 h-8 text-text_inverse rounded-full flex items-center justify-center hover:opacity-65 focus:opacity-65;
+  @apply w-8 h-8  text-text dark:text-text_inverse border border-solid bg-transparent border-text
+      dark:border-text_inverse rounded-full flex items-center justify-center hover:opacity-65 focus:opacity-65;
 }
 
 @utility border-top {
@@ -160,6 +197,21 @@
 html,
 body {
   @apply leading-relaxed font-normal not-italic text-base text-black dark:text-white bg-background dark:bg-background_inverse;
+}
+
+em,
+i {
+  @apply font-italic;
+}
+
+b,
+strong {
+  @apply font-bold;
+}
+
+em strong,
+strong em {
+  @apply font-italic-bold;
 }
 
 h1 {
@@ -260,7 +312,7 @@ ol li {
 @layer components {
   /* Buttons + Links */
   .btn-primary {
-    @apply btn;
+    @apply btn-outline;
   }
   .btn-secondary {
     @apply btn-outline;
@@ -283,7 +335,7 @@ ol li {
   }
   /* Buttons per Background */
   .section-inverse .btn-primary {
-    @apply btn-inverse;
+    @apply btn-outline-inverse;
   }
   .section-inverse .btn-secondary {
     @apply btn-outline-inverse;
@@ -514,5 +566,10 @@ ol li {
   }
   .mobile-subnav__list-item-link {
     @apply block pt-2;
+  }
+
+  /** Blocks **/
+  .teaser {
+    @apply h-full rounded-md flex flex-col;
   }
 }
