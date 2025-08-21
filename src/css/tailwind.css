@@ -13,27 +13,27 @@
 
 @theme {
   --color-primary: #063f70;
-  --color-primary_inverse: #063f70;
-  --color-text: #121212;
+  --color-primary_inverse: #45a3f5;
+  --color-text: #000000;
   --color-text_inverse: #ffffff;
   --color-muted: #66707a;
-  --color-muted_inverse: #66707a;
-  --color-muted_secondary: #66707a;
-  --color-muted_secondary_inverse: #66707a;
-  --color-borders: #cccccc;
-  --color-borders_inverse: #cccccc;
+  --color-muted_inverse: #dbdbdb;
+  --color-muted_secondary: #4a4f46;
+  --color-muted_secondary_inverse: #d2e0c8;
+  --color-borders: #9e978a;
+  --color-borders_inverse: #4f4c46;
   --color-footer: #333333;
-  --color-background: #ffffff;
-  --color-background_inverse: #2b5b70;
+  --color-background: #f9f9f9;
+  --color-background_inverse: #b8481c;
   --color-background_muted: #dbdbdb;
   --color-background_muted_inverse: #dbdbdb;
-  --color-background_muted_secondary: #dbdbdb;
-  --color-background_muted_secondary_inverse: #dbdbdb;
+  --color-background_muted_secondary: #db5865;
+  --color-background_muted_secondary_inverse: #db5865;
   --color-success: #28a745;
   --color-info: #17a2b8;
   --color-warning: #ffc107;
   --color-error: #dc3545;
-  --color-rating: #fbc112;
+  --color-rating: #fbc118;
 }
 @layer base {
   html {
@@ -183,39 +183,40 @@
   text-shadow: none;
 }
 
+@utility btn-default {
+  @apply rounded-3xl border-2 font-bold border-solid px-5 py-2.5 text-sm hover:opacity-65 focus:opacity-65;
+}
+
 @utility btn-outline {
-  @apply rounded-md border-2 text-text dark:text-text_inverse border border-solid bg-transparent border-text
-      dark:border-text_inverse px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65;
+  @apply btn-default text-background_inverse bg-transparent border-background_inverse;
 }
 
 @utility btn-outline-inverse {
-  @apply rounded-md border-2 text-text_inverse dark:text-text border-solid bg-transparent border-text_inverse
-    dark:border-text px-12 py-3.5 text-xs uppercase tracking-wide hover:opacity-65 focus:opacity-65;
+  @apply btn-default text-text_inverse bg-transparent border-text_inverse;
 }
 
 @utility btn {
-  @apply btn-outline;
+  @apply btn-default text-text bg-text_inverse border-background_muted_secondary;
 }
 
 @utility btn-inverse {
-  @apply btn-outline-inverse;
+  @apply btn;
 }
 
 @utility btn-pillow {
-  @apply w-8 h-8  text-text dark:text-text_inverse border border-solid bg-transparent border-text
-      dark:border-text_inverse rounded-full flex items-center justify-center hover:opacity-65 focus:opacity-65;
+  @apply w-8 h-8  text-text border border-solid bg-transparent border-text rounded-full flex items-center justify-center hover:opacity-65 focus:opacity-65;
 }
 
 @utility border-top {
-  @apply border-t border-solid border-borders dark:border-muted_inverse;
+  @apply border-t border-solid border-borders;
 }
 
 @utility border-bottom {
-  @apply border-b border-solid border-borders dark:border-muted_inverse;
+  @apply border-b border-solid border-borders;
 }
 
 html {
-  @apply leading-relaxed font-normal not-italic text-black dark:text-white bg-background dark:bg-background_inverse;
+  @apply leading-relaxed font-normal not-italic text-black bg-background;
 }
 
 em,
@@ -265,7 +266,7 @@ figcaption {
 }
 
 figcaption > footer {
-  @apply text-muted dark:text-muted_inverse italic inline;
+  @apply text-muted italic inline;
 }
 p:not(.formblock p, .search-teaser p, footer p) {
   @apply mb-8;
@@ -275,7 +276,24 @@ img:not(.banner-image, .footer-image) {
   @apply max-w-full h-auto rounded-md;
 }
 
+.section-inverse
+  a:not(
+    .btn-primary,
+    .btn-secondary,
+    .btn,
+    .btn-outline,
+    .btn-outline-inverse,
+    .btn-pillow,
+    .btn-edit,
+    .link-arrow,
+    .img-link,
+    .icon-link
+  ) {
+  @apply hover:text-muted_inverse focus:text-muted_inverse;
+}
+
 a:not(
+    .section-inverse a,
     .btn-primary,
     .btn-secondary,
     .btn,
@@ -288,8 +306,9 @@ a:not(
     .icon-link
   ),
 .menu button {
-  @apply hover:text-primary dark:hover:text-primary_inverse focus:text-primary dark:focus:text-primary_inverse;
+  @apply hover:text-muted focus:text-muted;
 }
+
 a:not(
     header a,
     footer a,
@@ -331,7 +350,7 @@ ol li {
 @layer components {
   /* Buttons + Links */
   .btn-primary {
-    @apply btn-outline;
+    @apply btn;
   }
   .btn-secondary {
     @apply btn-outline;
@@ -340,21 +359,21 @@ ol li {
     @apply btn-pillow fixed bottom-3 right-3;
   }
   .link-arrow {
-    @apply leading-6 px-2 underline underline-offset-4 decoration-1 font-semibold hover:text-primary dark:hover:text-primary_inverse focus:text-primary dark:focus:text-primary_inverse;
+    @apply leading-6 px-2 underline underline-offset-4 decoration-1 font-semibold hover:text-muted  focus:text-muted;
   }
   /* Sections */
   .section-muted {
-    @apply bg-background_muted dark:bg-background_muted_inverse text-text dark:text-text_inverse;
+    @apply bg-background_muted text-text;
   }
   .section-muted-secondary {
-    @apply bg-background_muted_secondary dark:bg-background_muted_secondary_inverse text-text dark:text-text_inverse;
+    @apply bg-background_muted_secondary text-text;
   }
   .section-inverse {
-    @apply bg-background_inverse dark:bg-background text-text_inverse dark:text-text;
+    @apply bg-background_inverse text-text_inverse;
   }
   /* Buttons per Background */
   .section-inverse .btn-primary {
-    @apply btn-outline-inverse;
+    @apply btn-inverse;
   }
   .section-inverse .btn-secondary {
     @apply btn-outline-inverse;
@@ -362,46 +381,46 @@ ol li {
   /* Teaser */
   .teaser-default,
   .section-inverse .teaser-inverse {
-    @apply bg-background dark:bg-background_inverse text-text dark:text-text_inverse;
+    @apply bg-background text-text;
   }
   .teaser-inverse,
   .section-transparent .teaser-default {
-    @apply bg-background_inverse dark:bg-background text-text_inverse dark:text-text;
+    @apply bg-background_inverse text-text_inverse;
   }
   .teaser-muted,
   .section-transparent .teaser-muted {
-    @apply bg-background_muted dark:bg-background_muted_inverse text-text dark:text-text_inverse;
+    @apply bg-background_muted text-text;
   }
   .teaser-muted-secondary,
   .section-transparent .teaser-muted-secondary {
-    @apply bg-background_muted_secondary dark:bg-background_muted_secondary_inverse text-text dark:text-text_inverse;
+    @apply bg-background_muted_secondary text-text;
   }
   .section-inverse .teaser-muted {
-    @apply bg-background_muted_inverse dark:bg-background_muted text-text_inverse dark:text-text;
+    @apply bg-background_muted_inverse text-text_inverse;
   }
   /* Muted/Primary  Texts */
   .line-primary {
-    @apply text-primary dark:text-primary_inverse;
+    @apply text-primary;
   }
   .line-muted-inverse,
   .teaser-inverse .line-muted,
   .section-inverse .line-muted {
-    @apply text-muted_inverse dark:text-muted;
+    @apply text-muted_inverse;
   }
   .line-muted,
   .section-inverse .teaser-inverse .line-muted {
-    @apply text-muted dark:text-muted_inverse;
+    @apply text-muted;
   }
   /* bg special */
   .bg-bullet-default {
-    @apply bg-muted dark:bg-muted_inverse;
+    @apply bg-muted;
   }
   .section-inverse .bg-bullet-default {
-    @apply bg-text_inverse dark:bg-text;
+    @apply bg-text_inverse;
   }
   /* Headlines per Background */
   .headline-inverse {
-    @apply text-text dark:text-text_inverse;
+    @apply text-text;
   }
   /* Buttons / Texts per Teaser and Sections */
   .teaser-inverse .btn-secondary {
@@ -426,7 +445,7 @@ ol li {
 
   /* Job Data */
   .job-data__div {
-    @apply py-4 border-b border-borders dark:border-muted_inverse first:border-t;
+    @apply py-4 border-b border-borders first:border-t;
   }
   .job-data__label {
     @apply text-base font-semibold my-1;
@@ -473,7 +492,7 @@ ol li {
     @apply max-w-2xl leading-tight lg:col-span-2;
   }
   .hero-default__subline {
-    @apply mt-6 mb-10 text-2xl leading-normal text-muted dark:text-muted_inverse;
+    @apply mt-6 mb-10 text-2xl leading-normal text-muted;
   }
   .hero-default__links {
     @apply space-x-4;
@@ -485,7 +504,7 @@ ol li {
     @apply lg:relative;
   }
   .hero-banner__gradient {
-    @apply hidden lg:block lg:absolute inset-0 bg-gradient-to-r from-white dark:from-black to-transparent;
+    @apply hidden lg:block lg:absolute inset-0 bg-gradient-to-r from-white;
   }
   .hero-banner__content {
     @apply relative container h-full grid lg:grid-cols-12 lg:gap-10 items-center;
@@ -514,7 +533,7 @@ ol li {
     @apply flex lg:flex-1;
   }
   .nav__list {
-    @apply hidden lg:flex lg:gap-x-6 xl:gap-x-10 2xl:gap-x-12 text-text dark:text-text_inverse;
+    @apply hidden lg:flex lg:gap-x-6 xl:gap-x-10 2xl:gap-x-12 text-text;
   }
   .nav__list-item {
     @apply block font-semibold leading-6;
@@ -530,7 +549,7 @@ ol li {
   }
 
   .subnav__list {
-    @apply absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-background dark:bg-background_inverse p-2 shadow-lg ring-1 ring-gray-900/5 dark:ring-muted_inverse/50 dark:shadow-muted_inverse/50;
+    @apply absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-background p-2 shadow-lg ring-1 ring-gray-900/5;
   }
   .subnav__list-item-link {
     @apply block rounded-lg px-3 py-2 text-sm font-semibold leading-6;
@@ -544,7 +563,7 @@ ol li {
     @apply flex lg:hidden;
   }
   .mobile-nav__burger-button {
-    @apply -m-2.5 inline-flex items-center justify-center rounded-md p-2.5  text-text dark:text-text_inverse;
+    @apply -m-2.5 inline-flex items-center justify-center rounded-md p-2.5  text-text;
   }
   .mobile-nav {
     @apply lg:hidden;
@@ -553,10 +572,10 @@ ol li {
     @apply fixed inset-0 z-10;
   }
   .mobile-nav__container {
-    @apply fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-background dark:bg-background_inverse px-6 py-6 sm:max-w-md sm:ring-1 sm:ring-gray-900/10;
+    @apply fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-background px-6 py-6 sm:max-w-md sm:ring-1 sm:ring-gray-900/10;
   }
   .mobile-nav__close-button {
-    @apply -m-2.5 rounded-md p-2.5 text-text dark:text-text_inverse;
+    @apply -m-2.5 rounded-md p-2.5 text-text;
   }
   .mobile-nav__brand {
     @apply flex items-center justify-between;
@@ -577,7 +596,7 @@ ol li {
     @apply flex items-center gap-x-1;
   }
   .mobile-nav__list-expand-button-icon {
-    @apply flex-none text-muted dark:text-muted_inverse size-4;
+    @apply flex-none text-muted size-4;
   }
 
   .mobile-subnav__list {
