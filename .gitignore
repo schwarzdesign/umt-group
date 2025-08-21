@@ -15,6 +15,7 @@ Icon
 
 .lock
 package-lock.json
+composer.lock
 
 # Editors
 # (sensitive workspace files)
