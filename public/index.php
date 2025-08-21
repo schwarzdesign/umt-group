@@ -37,10 +37,10 @@ if (is_dir($multisitesfolder)) {
 
 // set the contentfolder
 
-if (in_array($SecondHostSegment, $multisites)) {
-    $contentfolder = "/content-multisites/" . $SecondHostSegment;
-} elseif (in_array($FirstHostSegment, $multisites)) {
+if (in_array($FirstHostSegment, $multisites)) {
     $contentfolder = "/content-multisites/" . $FirstHostSegment;
+} elseif (in_array($SecondHostSegment, $multisites)) {
+    $contentfolder = "/content-multisites/" . $SecondHostSegment;
 } else {
     $contentfolder = "/content";
 }
