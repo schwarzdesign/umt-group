@@ -2,4 +2,26 @@
 @import "../tailwind.css";
 
 @theme {
+  --color-primary: #063f70;
+  --color-primary_inverse: #45a3f5;
+  --color-text: #1e1e1e;
+  --color-text_inverse: #ffffff;
+  --color-muted: #66707a;
+  --color-muted_inverse: #dbdbdb;
+  --color-muted_secondary: #4a4f46;
+  --color-muted_secondary_inverse: #d2e0c8;
+  --color-borders: #9e978a;
+  --color-borders_inverse: #4f4c46;
+  --color-footer: #333333;
+  --color-background: #ffffff;
+  --color-background_inverse: #923702;
+  --color-background_muted: #f2f2f2;
+  --color-background_muted_inverse: #f2f2f2;
+  --color-background_muted_secondary: #f35c04;
+  --color-background_muted_secondary_inverse: #f35c04;
+  --color-success: #28a745;
+  --color-info: #17a2b8;
+  --color-warning: #ffc107;
+  --color-error: #dc3545;
+  --color-rating: #fbc118;
 }
