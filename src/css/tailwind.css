@@ -35,6 +35,23 @@
   --color-error: #dc3545;
   --color-rating: #fbc112;
 }
+@layer base {
+  html {
+    font-size: 16px;
+  }
+  :root {
+    --text-base: 16px;
+  }
+  @media (min-width: 1280px) {
+    html {
+      font-size: 20px;
+    }
+    :root {
+      --text-base: 20px;
+    }
+  }
+}
+
 @font-face {
   font-family: "Anybody";
   font-style: normal;
@@ -92,7 +109,7 @@
 }
 
 @utility container-py {
-  @apply py-20 md:py-25;
+  @apply py-10 xl:py-25;
 }
 @utility container-py-small {
   @apply py-10;
@@ -112,11 +129,14 @@
 @utility container-px {
   @apply px-25;
 }
+@utility container-px-medium {
+  @apply px-10;
+}
 @utility container-px-small {
   @apply px-5;
 }
 @utility container {
-  @apply mx-auto container-px-small md:container-px max-w-7xl;
+  @apply mx-auto container-px-small md:container-px-medium xl:container-px max-w-7xl;
 }
 @utility layout_column_12 {
   @apply md:col-span-12;
@@ -135,7 +155,7 @@
   @apply md:col-span-6 lg:col-span-3;
 }
 @utility grid_default {
-  @apply grid md:grid-cols-12 md:gap-10;
+  @apply grid lg:grid-cols-12 lg:gap-10;
 }
 
 @utility text-shadow-sm {
@@ -194,9 +214,8 @@
   @apply border-b border-solid border-borders dark:border-muted_inverse;
 }
 
-html,
-body {
-  @apply leading-relaxed font-normal not-italic text-base text-black dark:text-white bg-background dark:bg-background_inverse;
+html {
+  @apply leading-relaxed font-normal not-italic text-black dark:text-white bg-background dark:bg-background_inverse;
 }
 
 em,
@@ -215,7 +234,7 @@ strong em {
 }
 
 h1 {
-  @apply text-4xl mb-4 leading-tight font-bold xl:text-5xl tracking-tight scroll-mt-6;
+  @apply text-4xl mb-4 leading-tight font-bold xl:text-6xl tracking-tight scroll-mt-6;
 }
 h2 {
   @apply text-3xl xl:text-4xl mb-4 mt-8 leading-tight font-bold scroll-mt-6;
