@@ -195,11 +195,11 @@
 }
 
 @utility btn {
-  @apply btn-default text-text bg-text_inverse border-background_muted_secondary;
+  @apply btn-default text-text_inverse bg-background_inverse border-background_muted_secondary;
 }
 
 @utility btn-inverse {
-  @apply btn;
+  @apply btn-default text-text bg-text_inverse border-background_muted_secondary;
 }
 
 @utility btn-pillow {
