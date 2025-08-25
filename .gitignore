@@ -90,7 +90,6 @@ auth.json
 # site div
 # ---------------
 /site/accounts/*
-/site/blueprints/*
 /site/cache/*
 /site/sessions/*
 
