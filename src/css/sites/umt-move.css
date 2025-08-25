@@ -25,3 +25,7 @@
   --color-error: #dc3545;
   --color-rating: #fbc118;
 }
+
+.hero-block__subcontent {
+  @apply bg-[url('/assets/images/umt-move-sign.svg')] lg:bg-none;
+}
