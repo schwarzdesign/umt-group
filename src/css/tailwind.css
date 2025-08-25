@@ -566,10 +566,20 @@ ol li {
     @apply space-x-4;
   }
 
-  /* Menu / Header */
+  /* Header */
   .header {
     @apply relative inset-x-0 top-0 z-50;
   }
+
+  /* Logo */
+  .logo__link {
+    @apply -m-1.5 p-1.5;
+  }
+  .logo__image {
+    @apply max-h-10 h-auto md:h-12 w-64 md:w-auto min-w-40;
+  }
+
+  /* Nav */
   .nav {
     @apply p-6 lg:p-10 flex items-center justify-between;
   }
