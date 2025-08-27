@@ -13,12 +13,15 @@
     </div>
       <?php $items = $site->menu()->toStructure() ?>
       <?php if ($items->isNotEmpty()): ?>
-        <ul class="menu nav__list">
-        <?php snippet('menu/menu-language-switch') ?>
-          <?php snippet('menu/menu-item-list', ['items' => $items]) ?>
-          <?php snippet('menu/menu-button') ?>
-          
-        </ul>
+        <div class="nav__menu">
+            <ul class="menu nav__list">
+                <?php snippet('menu/menu-language-switch') ?>
+                <?php snippet('menu/menu-item-list', ['items' => $items]) ?>
+            </ul>
+            <ul class="menu nav__buttons">
+                <?php snippet('menu/menu-button') ?>
+            </ul>
+        </div>
       <?php endif ?>
   </nav>
   <div x-description="Mobile menu, show/hide based on menu open state." class="mobile-nav" x-ref="dialog" x-show="open" aria-modal="true" style="display: none;">
