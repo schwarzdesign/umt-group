@@ -33,9 +33,9 @@ $cornerClass = $corner == 1 ? 'block-image-corner' : '';
                 setTimeout(() => this.imageActiveUrl = null, 300);
             },
         }" class="w-full h-full select-none">
-        <div class="block-image mb-8 <?= $cornerClass ?> duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+        <div class="block-image <?= $cornerClass ?> duration-1000 delay-300 opacity-0 select-none ease animate-fade-in-view" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
     <?php else: ?>
-        <div class="block-image mb-8 <?= $cornerClass ?>">
+        <div class="block-image <?= $cornerClass ?>">
     <?php endif; ?>
 
     <?php snippet("utils/picture", [

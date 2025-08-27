@@ -89,6 +89,8 @@ return [
                 "1024w" => ["width" => 1024],
                 "1280w" => ["width" => 1280],
                 "1536w" => ["width" => 1536],
+                "1920w" => ["width" => 1920],
+                "2880w" => ["width" => 2880],
             ],
             "webp" => [
                 "640w" => ["width" => 640, "format" => "webp"],
@@ -96,6 +98,8 @@ return [
                 "1024w" => ["width" => 1024, "format" => "webp"],
                 "1280w" => ["width" => 1280, "format" => "webp"],
                 "1536w" => ["width" => 1536, "format" => "webp"],
+                "1920w" => ["width" => 1920, "format" => "webp"],
+                "2880w" => ["width" => 2880, "format" => "webp"],
             ],
         ],
         "enlarge" => $enlarge_size,

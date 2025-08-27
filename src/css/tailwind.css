@@ -141,6 +141,10 @@
   @apply px-5;
 }
 
+@utility fullwidth-container {
+  @apply container-px-small;
+}
+
 @utility layout_column_12 {
   @apply md:col-span-12;
 }
@@ -252,6 +256,10 @@ h4 {
 
 .layout-block {
   @apply mb-8;
+}
+
+.nospace-container .layout-block {
+  @apply mb-0;
 }
 
 .layout-block h2:not(.teaser h2),
@@ -669,9 +677,22 @@ ol li {
   .teaser {
     @apply h-full rounded-md flex flex-col;
   }
+  .block-image {
+    @apply mb-8;
+  }
+  .nospace-container .block-image {
+    @apply mb-0;
+  }
 
   .block-image-corner {
     @apply teaser-polygon;
+  }
+
+  .fullwidth-container .layout_column_12 .block-image {
+    @apply -mx-5;
+  }
+  .fullwidth-container .layout_column_12 .block-image img {
+    @apply w-lvw max-w-fit;
   }
 
   /* Footer  */
