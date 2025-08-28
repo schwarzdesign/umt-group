@@ -258,7 +258,7 @@ strong em {
 }
 
 h1 {
-  @apply font-anybody font-bold text-4xl mb-4 leading-tight xl:text-6xl tracking-tight scroll-mt-6;
+  @apply font-anybody font-bold leading-tight mb-4 text-4xl xl:text-6xl tracking-tight scroll-mt-6;
 }
 h2 {
   @apply font-anybody font-normal text-xl xl:text-2xl mb-4 mt-8 leading-tight scroll-mt-6;
@@ -733,5 +733,13 @@ ol li {
   }
   .footer__image {
     @apply h-6;
+  }
+
+  /** CTA section **/
+  .cta-section__content h2 {
+    @apply text-4xl! xl:text-5xl! font-bold;
+  }
+  .cta-buttons {
+    @apply mt-10 flex items-center gap-x-8;
   }
 }
