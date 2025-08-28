@@ -114,23 +114,25 @@
   @apply mx-auto container-px-small md:container-px-medium xl:container-px max-w-7xl;
 }
 @utility container-py {
-  @apply py-10 xl:py-25;
-}
-@utility container-py-small {
-  @apply py-10;
+  @apply py-5;
 }
 @utility container-pt {
-  @apply pt-20;
-}
-@utility container-pt-small {
-  @apply pt-10;
+  @apply pt-5;
 }
 @utility container-pb {
+  @apply pb-5;
+}
+
+@utility container-py-large {
+  @apply py-20;
+}
+@utility container-pt-large {
+  @apply pt-20;
+}
+@utility container-pb-large {
   @apply pb-20;
 }
-@utility container-pb-small {
-  @apply pb-10;
-}
+
 @utility container-px {
   @apply px-25;
 }
@@ -254,18 +256,10 @@ h4 {
   @apply text-xl leading-tight font-bold scroll-mt-6;
 }
 
-.layout-block {
-  @apply mb-8;
-}
-
-.nospace-container .layout-block {
-  @apply mb-0;
-}
-
 .layout-block h2:not(.teaser h2),
 .layout-block h3:not(.teaser h3),
 .layout-block h4 {
-  @apply mt-0;
+  @apply mt-0 mb-0;
 }
 
 .content > *:first-child {
@@ -467,12 +461,12 @@ ol li {
 
   /* News */
   .news_row {
-    @apply grid sm:grid-cols-6 sm:gap-x-10 sm:gap-y-2 py-10 sm:py-20;
+    @apply grid sm:grid-cols-6 sm:gap-x-10 sm:gap-y-2 container-pt-large;
   }
 
   /* Hero */
   .hero {
-    @apply container container-pt;
+    @apply container container-pt-large container-pb-large;
   }
   .hero__inner {
     @apply mx-auto max-w-2xl text-center;
@@ -553,13 +547,13 @@ ol li {
     @apply relative container h-full grid lg:grid-cols-12 items-end;
   }
   .hero-block__headline {
-    @apply container-pt-small lg:container-py-small;
+    @apply container-pt lg:container-py;
   }
   .hero-block__inner {
     @apply lg:col-span-9;
   }
   .hero-block__subcontent {
-    @apply container-pb lg:container-py-small container grid lg:grid-cols-12 lg:gap-10 bg-no-repeat bg-[url('/assets/images/umt-sign.svg')] bg-size-[auto_100vw] md:bg-size-[auto_50vw] bg-[position:calc(100%+50vw)_calc(100%+20vh)] md:bg-[position:calc(100%+10vw)_calc(100%+20vh)] lg:bg-none;
+    @apply container-pb lg:container-py container grid lg:grid-cols-12 lg:gap-10 bg-no-repeat bg-[url('/assets/images/umt-sign.svg')] bg-size-[auto_100vw] md:bg-size-[auto_50vw] bg-[position:calc(100%+50vw)_calc(100%+20vh)] md:bg-[position:calc(100%+10vw)_calc(100%+20vh)] lg:bg-none;
   }
   .hero-block__subinner {
     @apply lg:col-span-8 py-10;
@@ -676,12 +670,6 @@ ol li {
   /** Blocks **/
   .teaser {
     @apply h-full rounded-md flex flex-col;
-  }
-  .block-image {
-    @apply mb-8;
-  }
-  .nospace-container .block-image {
-    @apply mb-0;
   }
 
   .block-image-corner {
