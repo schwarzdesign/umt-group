@@ -147,20 +147,26 @@
   @apply container-px-small;
 }
 
+@utility layout-columns_spacing {
+  @apply pb-10 lg:pb-0;
+}
 @utility layout_column_12 {
-  @apply md:col-span-12;
+  @apply lg:col-span-12;
 }
 @utility layout_column_8 {
-  @apply md:col-span-6 lg:col-span-8;
+  @apply lg:col-span-6 xl:col-span-8;
 }
 @utility layout_column_6 {
-  @apply md:col-span-6;
+  @apply lg:col-span-6;
+  &:not(:last-child) {
+    @apply layout-columns_spacing;
+  }
 }
 @utility layout_column_4 {
-  @apply md:col-span-6 lg:col-span-4;
+  @apply lg:col-span-6 xl:col-span-4;
 }
 @utility layout_column_3 {
-  @apply md:col-span-6 lg:col-span-3;
+  @apply lg:col-span-6 xl:col-span-3;
 }
 @utility grid_default {
   @apply grid lg:grid-cols-12 lg:gap-10;
