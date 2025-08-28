@@ -19,7 +19,7 @@
   --color-muted: #66707a;
   --color-muted_inverse: #dbdbdb;
   --color-muted_secondary: #4a4f46;
-  --color-muted_secondary_inverse: #d2e0c8;
+  --color-muted_secondary_inverse: #c84c04;
   --color-borders: #9e978a;
   --color-borders_inverse: #4f4c46;
   --color-footer: #333333;
@@ -215,11 +215,11 @@
 }
 
 @utility btn {
-  @apply btn-default text-text_inverse bg-background_inverse border-background_muted_secondary;
+  @apply btn-default text-text_inverse bg-background_inverse border-background_inverse;
 }
 
 @utility btn-inverse {
-  @apply btn-default text-text bg-text_inverse border-background_muted_secondary;
+  @apply btn-default text-text bg-text_inverse border-text_inverse;
 }
 
 @utility btn-pillow {
@@ -482,9 +482,9 @@ ol li {
   .hero {
     @apply container container-pt-large container-pb-large;
   }
-  .hero__inner {
+  /* .hero__inner {
     @apply mx-auto max-w-2xl text-center;
-  }
+  } */
   .hero__headline {
     @apply max-w-2xl lg:col-span-2 xl:col-auto;
   }
@@ -622,7 +622,7 @@ ol li {
   }
 
   .subnav__list {
-    @apply absolute -left-8 top-full z-10 mt-3 w-56 rounded-xl bg-background p-2 shadow-lg ring-1 ring-gray-900/5;
+    @apply absolute -left-8 top-full z-10 mt-3 w-80 rounded-xl bg-background p-2 shadow-lg ring-1 ring-gray-900/5;
   }
   .subnav__list-item-link {
     @apply block rounded-lg px-3 py-2 text-sm font-semibold leading-6;
