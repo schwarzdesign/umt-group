@@ -207,7 +207,7 @@
 }
 
 @utility btn-outline {
-  @apply btn-default text-background_inverse bg-transparent border-background_inverse;
+  @apply btn-default text-background_muted_secondary_inverse bg-transparent border-background_muted_secondary_inverse;
 }
 
 @utility btn-outline-inverse {
@@ -215,7 +215,7 @@
 }
 
 @utility btn {
-  @apply btn-default text-text_inverse bg-background_inverse border-background_inverse;
+  @apply btn-default text-text_inverse bg-background_muted_secondary_inverse border-background_muted_secondary_inverse;
 }
 
 @utility btn-inverse {
@@ -258,13 +258,13 @@ strong em {
 }
 
 h1 {
-  @apply font-anybody font-bold leading-tight mb-4 text-4xl xl:text-6xl tracking-tight scroll-mt-6;
+  @apply font-anybody font-bold leading-tight mb-4 text-4xl 2xl:text-6xl tracking-tight scroll-mt-6;
 }
 h2 {
-  @apply font-anybody font-normal text-xl xl:text-2xl mb-4 mt-8 leading-tight scroll-mt-6;
+  @apply font-anybody font-normal text-xl 2xl:text-2xl mb-4 mt-8 leading-tight scroll-mt-6;
 }
 h3 {
-  @apply font-anybody font-bold text-2xl xl:text-3xl mb-3 mt-6 leading-tight scroll-mt-6;
+  @apply font-anybody font-bold text-2xl 2xl:text-3xl mb-3 mt-6 leading-tight scroll-mt-6;
 }
 h4 {
   @apply font-anybody font-normal text-xl leading-tight scroll-mt-6;
@@ -475,7 +475,16 @@ ol li {
 
   /* News */
   .news_row {
-    @apply grid sm:grid-cols-6 sm:gap-x-10 sm:gap-y-2 container-pt-large;
+    @apply grid sm:grid-cols-6 sm:gap-x-10 sm:gap-y-2;
+  }
+  .news_row img {
+    @apply teaser-polygon;
+  }
+  .news__headline {
+    @apply container-py;
+  }
+  .news__index-link {
+    @apply flex items-center gap-x-8;
   }
 
   /* Hero */
@@ -489,7 +498,7 @@ ol li {
     @apply max-w-2xl lg:col-span-2 xl:col-auto;
   }
   .hero__subline {
-    @apply mt-6 mb-10 text-lg;
+    @apply max-w-2xl mt-6 mb-10 text-lg;
   }
   .hero__preline {
     @apply flex items-center gap-1 justify-center mb-4;
@@ -576,7 +585,7 @@ ol li {
     @apply hidden lg:block lg:col-span-4 py-10;
   }
   .hero-block__subline {
-    @apply mb-10 text-xl md:text-2xl lg:text-3xl;
+    @apply mb-10 text-xl md:text-2xl 2xl:text-3xl;
   }
   .hero-block__links {
     @apply space-x-4;
@@ -584,7 +593,7 @@ ol li {
 
   /* Header */
   .header {
-    @apply relative inset-x-0 top-0 z-50;
+    @apply relative inset-x-0 top-0 z-50 border-b border-borders;
   }
 
   /* Logo */
@@ -684,6 +693,9 @@ ol li {
   /** Blocks **/
   .teaser {
     @apply h-full rounded-md flex flex-col;
+  }
+  .teaser img {
+    @apply teaser-polygon;
   }
 
   .block-image-corner {
