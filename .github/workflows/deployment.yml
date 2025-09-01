@@ -14,7 +14,6 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
 
-      # --- PHP / Composer ---
       - name: PHP Setup
         uses: shivammathur/setup-php@v2
         with:
@@ -37,11 +36,6 @@ jobs:
 
       - name: Enforce engines
         run: npm config set engine-strict true
-
-      - name: Install native build tools (fallback for from-source builds)
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y build-essential python3
 
       - name: NPM Installation & Build
         env:
