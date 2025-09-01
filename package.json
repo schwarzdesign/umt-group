@@ -11,6 +11,7 @@
     "copy:js:prod": "copyfiles -f src/js/alpine.min.js public/assets/js/ && copyfiles -f src/js/alpine.focus.min.js public/assets/js/ && copyfiles -f src/js/dark-mode.js public/assets/js/ && copyfiles -f src/js/page-nav.js public/assets/js/",
     "fonts": "copyfiles -u 2 \"src/fonts/**/*\" \"public/assets/fonts\"",
     "images": "copyfiles -u 2 \"src/images/**/*\" \"public/assets/images\"",
+    "favicons": "copyfiles -u 2 \"src/favicons/**/*\" \"public/assets/favicons\"",
 
     "build:default": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/css/styles.css -m",
     "build:dynamic": "node ./tools/css-multisite.js build",
