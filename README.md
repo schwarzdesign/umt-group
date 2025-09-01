@@ -115,15 +115,17 @@ Auf diese Weise kann jede Domain ein eigenes Styling haben, ohne dass die global
 
 ## Available npm scripts
 
-| Command               | Description                                                                 |
-|------------------------|-----------------------------------------------------------------------------|
-| `npm run fonts`        | Kopiert/erstellt Fonts (nur bei Änderungen notwendig).                      |
-| `npm run build`        | Baut **Default-CSS (`styles.css`)** und alle gültigen **Domain-CSS**.       |
-| `npm run watch`        | Startet Watcher für Default-CSS und alle gültigen Domain-CSS (parallel).    |
-| `npm run build:default`| Baut nur das Default-CSS (`src/css/tailwind.css` → `public/assets/css/styles.css`). |
-| `npm run build:dynamic`| Baut nur die Domain-CSS (alle gültigen unter `src/css/sites/*`).            |
-| `npm run watch:default`| Watch-Modus nur für Default-CSS.                                            |
-| `npm run watch:dynamic`| Watch-Modus nur für Domain-CSS.                                             |
+| Command                | Description                                                                 |
+|-------------------------|-----------------------------------------------------------------------------|
+| `npm run fonts`         | Kopiert/erstellt Fonts (nur bei Änderungen notwendig).                      |
+| `npm run images`        | Kopiert/erstellt Images (nur bei Änderungen notwendig).                     |
+| `npm run favicons`      | Kopiert/erstellt Favicons (nur bei Änderungen notwendig).                   |
+| `npm run build`         | Baut **Default-CSS (`styles.css`)** und alle gültigen **Domain-CSS**.       |
+| `npm run watch`         | Startet Watcher für Default-CSS und alle gültigen Domain-CSS (parallel).    |
+| `npm run build:default` | Baut nur das Default-CSS (`src/css/tailwind.css` → `public/assets/css/styles.css`). |
+| `npm run build:dynamic` | Baut nur die Domain-CSS (alle gültigen unter `src/css/sites/*`).            |
+| `npm run watch:default` | Watch-Modus nur für Default-CSS.                                            |
+| `npm run watch:dynamic` | Watch-Modus nur für Domain-CSS.                                             |
 
 ---
 
