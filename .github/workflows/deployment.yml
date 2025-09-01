@@ -34,6 +34,8 @@ jobs:
           npm i -g npm@10
           npm ci --include=optional
           npm run fonts
+          npm run images
+          npm run favicons
           npm run build
 
       - name: Install sshpass
