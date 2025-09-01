@@ -6,6 +6,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -13,6 +14,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           fetch-depth: 0
 
+      # --- PHP / Composer ---
       - name: PHP Setup
         uses: shivammathur/setup-php@v2
         with:
@@ -20,18 +22,31 @@ jobs:
           tools: composer
 
       - name: Composer Install
-        run: composer install --no-scripts --no-dev --no-progress --no-interaction --prefer-dist --optimize-autoloader
         env:
           COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.GH_TOKEN }}"}}'
+        run: |
+          composer install \
+            --no-scripts --no-dev --no-progress --no-interaction \
+            --prefer-dist --optimize-autoloader
 
-      - name: NodeJS Installation
+      - name: Use Node.js (from .nvmrc) + npm cache
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - name: Enforce engines
+        run: npm config set engine-strict true
+
+      - name: Install native build tools (fallback for from-source builds)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential python3
 
       - name: NPM Installation & Build
+        env:
+          NODE_ENV: production
         run: |
-          npm i -g npm@10
           npm ci --include=optional
           npm run fonts
           npm run images
