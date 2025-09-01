@@ -7,7 +7,7 @@ $svgIconEdit = tailwindThemeUseFontAwesome('pencil', 'light', 'h-4 w-4 top inlin
 ?>
 <footer aria-labelledby="footer-heading">
         <h2 id="footer-heading" class="sr-only">Footer</h2>
-          <div class="container-pt-large">
+          <div class="container-pt">
             <div class="container">
               <div class="footer__content">
                 <div>
