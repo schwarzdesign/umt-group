@@ -234,10 +234,6 @@
   @apply border-b border-solid border-borders;
 }
 
-@utility teaser-polygon {
-  @apply [--notch:80px] [clip-path:polygon(0_0,100%_0,100%_calc(100%-var(--notch)),calc(100%-var(--notch))_100%,0_100%)];
-}
-
 html {
   @apply font-sourcesans3 font-normal leading-relaxed  text-text bg-background;
 }
@@ -400,22 +396,22 @@ ol li {
   /* Teaser */
   .teaser-default,
   .section-inverse .teaser-inverse {
-    @apply bg-background text-text teaser-polygon;
+    @apply bg-background text-text;
   }
   .teaser-inverse,
   .section-transparent .teaser-default {
-    @apply bg-background_inverse text-text_inverse teaser-polygon;
+    @apply bg-background_inverse text-text_inverse;
   }
   .teaser-muted,
   .section-transparent .teaser-muted {
-    @apply bg-background_muted text-text teaser-polygon;
+    @apply bg-background_muted text-text;
   }
   .teaser-muted-secondary,
   .section-transparent .teaser-muted-secondary {
-    @apply bg-background_muted_secondary text-text teaser-polygon;
+    @apply bg-background_muted_secondary text-text;
   }
   .section-inverse .teaser-muted {
-    @apply bg-background_muted_inverse text-text_inverse teaser-polygon;
+    @apply bg-background_muted_inverse text-text_inverse;
   }
   /* Muted/Primary  Texts */
   .line-primary {
@@ -476,9 +472,6 @@ ol li {
   /* News */
   .news_row {
     @apply grid sm:grid-cols-6 sm:gap-x-10 sm:gap-y-2;
-  }
-  .news_row img {
-    @apply teaser-polygon;
   }
   .news__headline {
     @apply container-py-small;
@@ -693,13 +686,6 @@ ol li {
   /** Blocks **/
   .teaser {
     @apply h-full rounded-md flex flex-col;
-  }
-  .teaser img {
-    @apply teaser-polygon;
-  }
-
-  .block-image-corner {
-    @apply teaser-polygon;
   }
 
   .fullwidth-container .layout_column_12 .block-image {

@@ -1,24 +1,24 @@
-/* src/css/sites/umt-move.css */
+/* src/css/sites/umt.css */
 @import "../tailwind.css";
 
 @theme {
   --color-primary: #063f70;
   --color-primary_inverse: #45a3f5;
-  --color-text: #1e1e1e;
+  --color-text: #121212;
   --color-text_inverse: #ffffff;
   --color-muted: #66707a;
-  --color-muted_inverse: #dbdbdb;
+  --color-muted_inverse: #66707a;
   --color-muted_secondary: #4a4f46;
   --color-muted_secondary_inverse: #d2e0c8;
   --color-borders: #f2f2f2;
   --color-borders_inverse: #f2f2f2;
   --color-footer: #333333;
   --color-background: #ffffff;
-  --color-background_inverse: #923702;
+  --color-background_inverse: #2b5b70;
   --color-background_muted: #f2f2f2;
   --color-background_muted_inverse: #f2f2f2;
-  --color-background_muted_secondary: #f35c04;
-  --color-background_muted_secondary_inverse: #f35c04;
+  --color-background_muted_secondary: #4798ba;
+  --color-background_muted_secondary_inverse: #4798ba;
   --color-success: #1d7208;
   --color-info: #055160;
   --color-warning: #876c12;
@@ -27,11 +27,11 @@
 }
 
 .hero-block__subcontent {
-  @apply bg-[url('/assets/images/umt-move-sign.svg')] lg:bg-none;
+  @apply bg-[url('/assets/images/umt-sign.svg')] lg:bg-none;
 }
 
-@utility teaser-polygon {
-  @apply [--notch:80px] [clip-path:polygon(0_0,100%_0,100%_calc(100%-var(--notch)),calc(100%-var(--notch))_100%,0_100%)];
+@utility teaser-border-radius {
+  @apply [border-bottom-right-radius:100px];
 }
 
 .teaser-default,
@@ -44,7 +44,7 @@
 .section-transparent .teaser-muted-secondary,
 .section-inverse .teaser-muted,
 .news_row img,
-.block-image-corner,
+.block-image-corner img,
 .teaser img:not(.person-author img) {
-  @apply teaser-polygon;
+  @apply teaser-border-radius;
 }
