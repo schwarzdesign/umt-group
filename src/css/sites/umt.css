@@ -30,7 +30,7 @@
   @apply bg-[url('/assets/images/umt-sign.svg')] lg:bg-none;
 }
 
-@utility teaser-border-radius {
+@utility card-rounded-corner {
   @apply [border-bottom-right-radius:100px];
 }
 
@@ -46,5 +46,5 @@
 .news_row img,
 .block-image-corner img,
 .teaser img:not(.person-author img) {
-  @apply teaser-border-radius;
+  @apply card-rounded-corner;
 }
