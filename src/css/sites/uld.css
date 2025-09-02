@@ -44,8 +44,12 @@
 .teaser-muted-secondary,
 .section-transparent .teaser-muted-secondary,
 .section-inverse .teaser-muted,
-.news_row img,
+.news_row img:not(.person-author img),
 .block-image-corner img,
 .teaser img:not(.person-author img) {
   @apply card-notched-corner;
+}
+
+.background__image {
+  @apply bg-[url('/assets/images/uld-background.svg')] bg-no-repeat bg-size-[auto_90vw];
 }

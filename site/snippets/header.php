@@ -41,7 +41,15 @@ if (file_exists($cssFile)) {
   <?= css($cssPath) ?>
 
 </head>
-<body>
+<body class="background__image" x-data="{
+    xClasses: ['background-x-1', 'background-x-2', 'background-x-3', 'background-x-4'],
+    yClasses: ['background-y-1', 'background-y-2', 'background-y-3', 'background-y-4'],
+    init() {
+      const x = this.xClasses[Math.floor(Math.random() * this.xClasses.length)];
+      const y = this.yClasses[Math.floor(Math.random() * this.yClasses.length)];
+      document.body.classList.add(x, y);
+    }
+  }">
 
 <?php snippet("menu/menu"); ?>
 <main class="main" aria-label="Content">

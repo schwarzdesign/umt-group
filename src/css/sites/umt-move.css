@@ -43,8 +43,12 @@
 .teaser-muted-secondary,
 .section-transparent .teaser-muted-secondary,
 .section-inverse .teaser-muted,
-.news_row img,
+.news_row img:not(.person-author img),
 .block-image-corner,
 .teaser img:not(.person-author img) {
   @apply card-cut-corner;
+}
+
+.background__image {
+  @apply bg-[url('/assets/images/umt-move-background.svg')] bg-no-repeat bg-size-[auto_90vw];
 }
