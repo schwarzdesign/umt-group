@@ -545,7 +545,7 @@ ol li {
     @apply max-w-2xl mt-6 mb-10 text-lg;
   }
   .hero__preline {
-    @apply flex items-center gap-1 justify-center mb-4;
+    @apply flex items-center gap-1 mb-4;
   }
   .hero__links {
     @apply space-x-4;
