@@ -746,6 +746,19 @@ ol li {
     @apply w-lvw max-w-fit;
   }
 
+  .video {
+    @apply w-full;
+  }
+  .video__wrapper-embed {
+    @apply relative w-full pt-[56.25%];
+  }
+  .video__wrapper-embed iframe {
+    @apply absolute top-0 left-0 w-full h-full;
+  }
+  .video__caption {
+    @apply mt-1 text-sm text-muted;
+  }
+
   /* Footer  */
   .footer__content {
     @apply font-anybody xl:grid xl:grid-cols-4 xl:gap-10 space-y-8 xl:space-y-0;
