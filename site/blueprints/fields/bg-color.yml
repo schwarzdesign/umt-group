@@ -1,0 +1,13 @@
+type: select
+required: true
+default: default
+options:
+  default:
+    de: Transparent
+    en: Transparent
+  muted:
+    de: Grau
+    en: Gray
+  inverse:
+    de: Invers
+    en: Invers

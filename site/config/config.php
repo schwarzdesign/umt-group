@@ -1,6 +1,5 @@
 <?php
 
-
 $environment = $_ENV["ENVIRONMENT"] ?: 'development';
 $isDev = 'development' === $environment;
 $isProd = 'production' === $environment;
@@ -18,8 +17,6 @@ return [
                 "apiKey" => $_ENV["OPENAI_API_KEY"],
             ],
         ],
-        "systemPrompt" =>
-            "Bei Antworten im HTML-Fomat: Geben nur den Inhalt aus, der in die <body>-Tags passen würde. Der <head>-Abschnitt oder andere Teile einer vollständigen HTML-Dokumentenstruktur dürfen nicht enthalten sein. Entferne alle Markdown-Formatierungen.",
         "temperature" => 0.8,
         "maxGenerationTokens" => 32000,
         "excludedBlocks" => [
