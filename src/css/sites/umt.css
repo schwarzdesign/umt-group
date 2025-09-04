@@ -15,8 +15,8 @@
   --color-footer: #333333;
   --color-background: #ffffff;
   --color-background_inverse: #2b5b70;
-  --color-background_muted: #f2f2f2;
-  --color-background_muted_inverse: #f2f2f2;
+  --color-background_muted: rgba(219, 219, 219, 0.6);
+  --color-background_muted_inverse: rgba(219, 219, 219, 0.6);
   --color-background_muted_secondary: #4798ba;
   --color-background_muted_secondary_inverse: #4798ba;
   --color-success: #1d7208;
