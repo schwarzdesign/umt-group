@@ -103,11 +103,11 @@
 }
 
 @utility font-anybody {
-  font-family: "Anybody", Arial sans-serif;
+  font-family: "Anybody", Arial, sans-serif;
 }
 
 @utility font-sourcesans3 {
-  font-family: "Source Sans 3", Arial sans-serif;
+  font-family: "Source Sans 3", Arial, sans-serif;
 }
 
 @utility font-italic {
@@ -258,6 +258,13 @@
 }
 @utility background-y-4 {
   background-position-y: 140vh;
+}
+
+/* Forms Plugin Override */
+@layer base {
+  body, textarea {
+    font-family: "Source Sans 3", Arial, sans-serif !important;
+  }
 }
 
 html {
