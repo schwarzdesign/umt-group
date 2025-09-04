@@ -138,7 +138,7 @@
   @apply pt-5;
 }
 @utility container-pb-small {
-  @apply pb-5;
+  @apply pb-0;
 }
 
 @utility container-px {
@@ -149,6 +149,21 @@
 }
 @utility container-px-small {
   @apply px-5;
+}
+
+@utility content-mb {
+  @apply mb-5;
+}
+/* Teaser Höhe hängt von spacing Bottom der Inhalte ab / content-mb */
+.layout-block-teaser {
+  height: calc(100% - 1.25rem);
+}
+
+@utility content-mt {
+  @apply mt-5;
+}
+@utility content-my-large {
+  @apply my-15;
 }
 
 @utility fullwidth-container {
@@ -286,13 +301,13 @@ strong em {
 }
 
 h1 {
-  @apply font-anybody font-bold leading-tight mb-4 text-4xl 2xl:text-6xl tracking-tight scroll-mt-6;
+  @apply font-anybody font-bold leading-tight content-mb text-4xl 2xl:text-6xl tracking-tight scroll-mt-6;
 }
 h2 {
-  @apply font-anybody font-normal text-xl 2xl:text-2xl mb-4 leading-tight scroll-mt-6;
+  @apply font-anybody font-normal text-xl 2xl:text-2xl content-mb leading-tight scroll-mt-6;
 }
 h3 {
-  @apply font-anybody font-bold text-2xl 2xl:text-3xl mb-4 leading-tight scroll-mt-6;
+  @apply font-anybody font-bold text-2xl 2xl:text-3xl content-mb leading-tight scroll-mt-6;
 }
 h4 {
   @apply font-anybody font-normal text-xl leading-tight scroll-mt-6;
@@ -303,14 +318,14 @@ h4 {
 }
 
 figcaption {
-  @apply text-muted pt-3;
+  @apply pt-3;
 }
 
 figcaption > footer {
-  @apply text-muted italic inline;
+  @apply italic inline;
 }
 p:not(.formblock p, .search-teaser p, footer p) {
-  @apply mb-4;
+  @apply content-mb;
 }
 
 img:not(.banner-image, .footer__image) {
@@ -367,7 +382,7 @@ a:not(
   @apply underline underline-offset-4 decoration-2 hover:opacity-65 focus:opacity-65;
 }
 ul:not(header ul, footer ul, ul.page-navigation) {
-  @apply list-none mb-4;
+  @apply list-none content-mb;
 }
 ul
   li:not(
@@ -476,13 +491,6 @@ ol li {
   .footer-menu .active {
     @apply underline underline-offset-4 decoration-2;
   }
-  /* Pagination */
-  /* .page-navigation li.active a {
-    @apply font-semibold;
-  } */
-  .rating .star {
-    @apply text-rating;
-  }
 
   /* Job Data */
   .job-data__div {
@@ -542,7 +550,7 @@ ol li {
     @apply max-w-4xl mt-6 mb-10 text-lg;
   }
   .hero__preline {
-    @apply flex items-center gap-1 mb-4;
+    @apply flex items-center gap-1 content-mb;
   }
   .hero__links {
     @apply space-x-4;
@@ -585,7 +593,7 @@ ol li {
     @apply relative container h-full grid lg:grid-cols-12 lg:gap-10 items-end;
   }
   .hero-banner__inner {
-    @apply lg:col-span-8 xl:col-span-6 container-py-small;
+    @apply lg:col-span-8 xl:col-span-6 container-pb;
   }
   .hero-banner__subline {
     @apply mt-6 lg:container-pb-small text-lg;
@@ -733,7 +741,7 @@ ol li {
 
   /** Blocks **/
   .teaser {
-    @apply h-full rounded-md flex flex-col;
+    @apply rounded-md flex flex-col pb-10 h-full;
   }
 
   .fullwidth-container .layout_column_12 .block-image {
@@ -753,7 +761,49 @@ ol li {
     @apply absolute top-0 left-0 w-full h-full;
   }
   .video__caption {
-    @apply mt-1 text-sm text-muted;
+    @apply mt-1 text-sm;
+  }
+
+  .block-quote {
+    @apply relative text-center max-w-lg mx-auto content-my-large;
+  }
+  .block-quote__rating {
+    @apply flex justify-center gap-2;
+  }
+  .rating .star {
+    @apply text-rating;
+  }
+  .block-quote__content {
+    @apply relative z-10;
+  }
+  .block-quote__inner {
+    @apply mt-4;
+  }
+  .block-quote__text {
+    @apply relative z-10;
+  }
+  .block-quote__cite {
+    @apply block not-italic mt-3 text-sm relative z-20;
+  }
+  .block-quote__quotation-icon {
+    @apply relative;
+  }
+  .block-quote__quotation-icon svg {
+    @apply absolute -top-8 -start-8 size-16 text-gray-100 sm:h-24 sm:w-24;
+  }
+  .section-muted .block-quote__quotation-icon svg,
+  .section-inverse .block-quote__quotation-icon svg {
+    @apply text-text_inverse;
+  }
+
+  .layout-block:not(
+      .layout-block-heading,
+      .layout-block-text,
+      .layout-block-list,
+      .layout-block-quote,
+      .layout-block-teaser
+    ) {
+    @apply content-mb;
   }
 
   /* Footer  */
@@ -782,7 +832,7 @@ ol li {
     @apply text-xs;
   }
   .footer__credits {
-    @apply font-anybody mt-8 lg:mt-16 pt-8 sm:mt-20 lg:mt-24 mb-4;
+    @apply font-anybody mt-8 lg:mt-16 pt-8 sm:mt-20 lg:mt-24 content-mb;
   }
   .footer__credits-text {
     @apply text-xs leading-5;
