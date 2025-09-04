@@ -533,16 +533,13 @@ ol li {
 
   /* Hero */
   .hero {
-    @apply container container-pt container-pb;
+    @apply container container-pt;
   }
-  /* .hero__inner {
-    @apply mx-auto max-w-2xl text-center;
-  } */
   .hero__headline {
-    @apply max-w-2xl lg:col-span-2 xl:col-auto;
+    @apply max-w-4xl lg:col-span-2 xl:col-auto;
   }
   .hero__subline {
-    @apply max-w-2xl mt-6 mb-10 text-lg;
+    @apply max-w-4xl mt-6 mb-10 text-lg;
   }
   .hero__preline {
     @apply flex items-center gap-1 mb-4;
@@ -553,10 +550,16 @@ ol li {
 
   /* Hero default */
   .hero-default {
-    @apply container container-py-small sm:py-40 lg:px-8;
+    @apply container container-pt;
   }
   .hero-default__inner {
-    @apply mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-6 xl:gap-x-8;
+    @apply grid_default items-center;
+  }
+  .hero-default__left {
+    @apply layout_column_6;
+  }
+  .hero-default__right {
+    @apply layout_column_6;
   }
   .hero-default__preline {
     @apply flex items-center gap-1;
@@ -570,9 +573,6 @@ ol li {
   .hero-default__links {
     @apply space-x-4;
   }
-  .hero-default__left {
-    @apply mt-6 lg:mt-0;
-  }
 
   /* Hero banner */
   .hero-banner {
@@ -582,16 +582,13 @@ ol li {
     @apply hidden lg:block lg:absolute inset-0 bg-gradient-to-r from-white;
   }
   .hero-banner__content {
-    @apply relative container h-full grid lg:grid-cols-12 lg:gap-10 items-center;
+    @apply relative container h-full grid lg:grid-cols-12 lg:gap-10 items-end;
   }
   .hero-banner__inner {
-    @apply lg:col-span-8 xl:col-span-6 py-10;
-  }
-  .hero-banner__headline {
-    @apply lg:text-shadow-lg;
+    @apply lg:col-span-8 xl:col-span-6 container-py-small;
   }
   .hero-banner__subline {
-    @apply mt-6 mb-10 text-lg lg:text-shadow-md;
+    @apply mt-6 lg:container-pb-small text-lg;
   }
   .hero-banner__links {
     @apply space-x-4;
