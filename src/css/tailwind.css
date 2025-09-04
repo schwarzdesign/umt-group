@@ -260,15 +260,14 @@
   background-position-y: 140vh;
 }
 
-/* Forms Plugin Override */
-@layer base {
-  body, textarea {
-    font-family: "Source Sans 3", Arial, sans-serif !important;
-  }
+html,
+body,
+textarea {
+  @apply font-sourcesans3;
 }
 
 html {
-  @apply font-sourcesans3 font-normal leading-relaxed  text-text bg-background;
+  @apply font-normal leading-relaxed  text-text bg-background;
 }
 
 em,
@@ -800,7 +799,7 @@ ol li {
 
   /** CTA section **/
   .cta-section__content h2 {
-    @apply text-4xl! xl:text-5xl! font-bold;
+    @apply text-4xl! xl:text-5xl! font-bold!;
   }
   .cta-buttons {
     @apply mt-10 flex items-center gap-x-8;
