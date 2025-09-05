@@ -25,8 +25,8 @@
   --color-footer: #333333;
   --color-background: #f9f9f9;
   --color-background_inverse: #b8481c;
-  --color-background_muted: rgba(219, 219, 219, 0.6);
-  --color-background_muted_inverse: rgba(219, 219, 219, 0.6);
+  --color-background_muted: rgba(230, 230, 230, 0.6);
+  --color-background_muted_inverse: rgba(230, 230, 230, 0.6);
   --color-background_muted_secondary: #db5865;
   --color-background_muted_secondary_inverse: #db5865;
   --color-success: #28a745;
@@ -544,10 +544,10 @@ ol li {
     @apply container container-pt;
   }
   .hero__headline {
-    @apply max-w-4xl lg:col-span-2 xl:col-auto;
+    @apply max-w-3xl lg:col-span-2 xl:col-auto;
   }
   .hero__subline {
-    @apply max-w-4xl mt-6 mb-10 text-lg;
+    @apply max-w-3xl mt-6 mb-10 text-2xl;
   }
   .hero__preline {
     @apply flex items-center gap-1 content-mb;
@@ -845,6 +845,10 @@ ol li {
   }
 
   /** CTA section **/
+  .cta-section__content {
+    @apply max-w-3xl;
+  }
+
   .cta-section__content h2 {
     @apply text-4xl! xl:text-5xl! font-bold!;
   }
